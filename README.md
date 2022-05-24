@@ -8,7 +8,7 @@ note: Fork this Repository then work on it(on the forked one) after finishing it
 
 ## Deadline
 
-The assignment Deadline for review is in your :
+The assignment Deadline is discussed in your Email.
 
 Note: Even if you didn't finish the task before the deadline make the PR with the main  
 
