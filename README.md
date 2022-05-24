@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# Satellite Manager Task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## The Assignment
 
-## Available Scripts
+The Assignment that you about to create is called Satellite Manager, that is about Managing Satellites that users can see the Satellite information and details in form of table more on that later, your task is implement(build) a design(UI) using React JS, to test your frontend skills, note that every detail might matter, every careful and subtle touches as well as bigger picture quality, re-usability, maintainability and accessibility thoughts you put into the application helps us better understand your skills and your mental model of engineering in general and coding in particular.
 
-In the project directory, you can run:
+note: Fork this Repository then work on it(on the forked one) after finishing it make a PR(Pull Request) to this main Repository 
 
-### `npm start`
+## Deadline
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The assignment Deadline for review is in your :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Note: Even if you didn't finish the task before the deadline make the PR with the main  
 
-### `npm test`
+## Design and Implementation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+For the Design you can find the Figma link [here](https://www.figma.com/file/LLL9PYg2gV9SljQD4DhnHS/Untitled?node-id=1%3A4)
 
-### `npm run build`
+Note: Try preview the application with Figma Preview functionality and interact with links and buttons to see how they respond to actions, but keep in mind, it's just a mock up, and real-world applications need more attention in terms of both design and functionality.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Important Note: For Styling we prefer using [Tailwind CSS](https://tailwindcss.com/) or pure CSS but feel free to use any other CSS Frameworks(Chakra UI, Bootstrap,... etc)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+In the Home Page you have a Table, Filter button, Search Input, Add Satellite and A range of Date for filtering
+- Filter Button: Opens a Modal that contains the filtering Inputs like how the design shows it that it contains:
+  - Multiselect input for `CreatedBy`, `Satellite Dishes`, `City`
+  - Radio button for `Status`: that you can choose Success or Error or Both of them to show in the Table
+  - Reset Button
+- Date Range: Is another property for filtering, handle it using [React Date Picker](https://www.npmjs.com/package/react-datepicker) 
+- Search Input: used for filtering by searching in `name` and `created by` column
+- Add Satellite button: This Button will go to the `/add` route there you can handle Adding functionality
+- Table: here try to show the data that is inside `data.json` in the table using [React Table](https://react-table.tanstack.com/)
+- Pagination: paginate the data using react-table that it contains pagination or feel free to use any other pagination packages
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+For the Add Satellite Page you have two main sections:
+- Add Section: here you have a form that you add data(satellite) to the `data.json` but for creating it consider the following:
+  - Validation
+  - Types( check the data.json to know what are the types of each property)
+  - Error Handling 
+  - Each Validation 
+  - Alert(using packages)
+  - Handling Date Picker(using same package [React Date Picker](https://www.npmjs.com/package/react-datepicker))
+- Latest Section: Try to Calculate and return latest 10 Satellites in the Database(data.json)
 
-### `npm run eject`
+Note: Back button redirecting user to home page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Data 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The Data is inside `data.json` in the `./src/data.json` file, feel free to check it out and understand the format of the data  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+by running this command
 
-## Learn More
+`npm run server.json`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+A json server will run and you can fetch your data like any API or Backend integration
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+An example of individual satellite data:
+```
+{
+        "id": 29,
+        "name": "Laurel",
+        "configuredAt": "28-01-2022",
+        "createdBy": "Muhammad Sardar",
+        "satelliteDishes": [
+            "Dish 1000",
+            "Dish 300"
+        ],
+        "address": {
+            "longitude": 117.218044,
+            "latitude": 39.19537
+        },
+        "status": true,
+        "city": "Duhok"
+    },  
 
-### Code Splitting
+```
+Note: 
+- `data.json` contains Array of satellite objects
+- When you implement the Add functionality be sure using same types
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Notes
 
-### Analyzing the Bundle Size
+Consider the following:
+1. problem-solving in simple efficient way. 
+2. Code style (code readability). 
+3. Input validation. 
+4. Unit Testing. 
+5. Error handling. 
+6. security. 
+7. scalability.
+8. best practices and design patterns. 
+9. naming and correct spelling. 
+10. code reusability(DRY). 
+11. efficiency.
+12. use latest version of packages
+13. Add Global State(using Context API)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Our main key for doing this task is to test you so for better chance be creative and efficient in writing your code, Good Luck
+if you have any question feel free to ask it 
 
-### Making a Progressive Web App
+## Plus
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Make The Dashboard Responsive
+2. Add SignIn/Up page and functionality
+3. Add Animation
+4. State Management(Redux)
+5. Add Dark Mode
+6. Feel free to additional pages 
