@@ -28,31 +28,35 @@ In the Home Page you have a Table, Filter button, Search Input, Add Satellite an
 - Date Range: Is another property for filtering, handle it using [React Date Picker](https://www.npmjs.com/package/react-datepicker) 
 - Search Input: used for filtering by searching in `name` and `created by` column
 - Add Satellite button: This Button will go to the `/add` route there you can handle Adding functionality
-- Table: here try to show the data that is inside `data.json` in the table using [React Table](https://react-table.tanstack.com/)
+- Table: here try to show the data that is inside `db.json` in the table using [React Table](https://react-table.tanstack.com/)
 - Pagination: paginate the data using react-table that it contains pagination or feel free to use any other pagination packages
 
 For the Add Satellite Page you have two main sections:
-- Add Section: here you have a form that you add data(satellite) to the `data.json` but for creating it consider the following:
+- Add Section: here you have a form that you add data(satellite) to the `db.json` but for creating it consider the following:
   - Validation
-  - Types( check the data.json to know what are the types of each property)
+  - Types( check the db.json to know what are the types of each property)
   - Error Handling 
   - Each Validation 
   - Alert(using packages)
   - Handling Date Picker(using same package [React Date Picker](https://www.npmjs.com/package/react-datepicker))
-- Latest Section: Try to Calculate and return latest 10 Satellites in the Database(data.json)
+- Latest Section: Try to Calculate and return latest 10 Satellites in the Database(db.json)
 
 Note: Back button redirecting user to home page
 
 
 ## Data 
 
-The Data is inside `data.json` in the `./src/data.json` file, feel free to check it out and understand the format of the data  
+The Data is inside `db.json` in the `./db.json` file, feel free to check it out and understand the format of the data  
 
 by running this command
 
-`npm run server.json`
+`json-server --watch db.json`
+
+`localhost:port-number/data`
 
 A json server will run and you can fetch your data like any API or Backend integration
+
+Note: For fetching data use `axios` package or any other fetching packages
 
 An example of individual satellite data:
 ```
@@ -75,7 +79,7 @@ An example of individual satellite data:
 
 ```
 Note: 
-- `data.json` contains Array of satellite objects
+- `db.json` contains Array of satellite objects
 - When you implement the Add functionality be sure using same types
 
 ## Notes
