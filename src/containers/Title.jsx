@@ -9,7 +9,7 @@ export default function Title() {
   return (
     <div className="text-xl mb-4">
       {path !== "/" && <BackButton />}
-      {navs.find((nav) => nav.path === path).name || ""}
+      {navs.find((nav) => nav.path === path)?.name || ""}
       <ThemeButton />
     </div>
   );

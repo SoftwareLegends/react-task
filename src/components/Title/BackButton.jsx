@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 import backicon from "../../assets/backicon.svg";
 
-const BackButton = () => {
+const BackButton = ({ text }) => {
   const navigate = useNavigate();
 
   return (
@@ -12,7 +12,11 @@ const BackButton = () => {
       }}
       className="bg-pallate1 px-5 py-3 mr-2 rounded text-white hover:scale-105 transition-all ease-in-out"
     >
-      <img src={backicon} alt="icon for going to previus page in history." />
+      {text ? (
+        text
+      ) : (
+        <img src={backicon} alt="icon for going to previus page in history." />
+      )}
     </button>
   );
 };
