@@ -2,14 +2,17 @@ import React from "react";
 import Navigation from "./containers/Navigation";
 import Home from "./containers/Home";
 import Adding from "./containers/Adding";
+import { Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
     <>
       <Navigation />
-      <div className="ml-40 w-[calc(100%-10rem)] p-5 pt-6">
-        <Home />
-        <Adding />
+      <div className="ml-48 w-[calc(100%-12rem)] p-4">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/add" element={<Adding />} />
+        </Routes>
       </div>
     </>
   );
