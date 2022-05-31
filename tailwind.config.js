@@ -4,7 +4,12 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     fontFamily: {
-      sans: ['"roboto"', ...defaultTheme.fontFamily.sans],
+      sans: ['"inter"', ...defaultTheme.fontFamily.sans],
+    },
+    colors: {
+      pallate1: "#54BAB9",
+      white: "#fff",
+      black: "#000",
     },
     extend: {},
   },

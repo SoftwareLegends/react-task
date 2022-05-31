@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: roboto;
-  src: url(./fonts/roboto.ttf);
+  font-family: inter;
+  src: url(./fonts/Inter.ttf);
 }
 
 body {
