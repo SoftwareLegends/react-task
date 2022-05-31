@@ -1,6 +1,6 @@
-import NavigationTitle from "../components/navigation/NavigationTitle";
-import NavigationButton from "../components/navigation/NavigationButton";
-import navigation_items from "../components/navigation/NavigationPaths.json";
+import NavigationTitle from "../components/Navigation/NavigationTitle";
+import NavigationButton from "../components/Navigation/NavigationButton";
+import navigation_items from "../components/Navigation/NavigationPaths.json";
 
 export default function Navigation() {
   return (
