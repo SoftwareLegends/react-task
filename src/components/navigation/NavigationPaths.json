@@ -1,4 +1,4 @@
 [
   { "name": "Home", "path": "/" },
-  { "name": "Add Satellite", "path": "add" }
+  { "name": "Add Satellite", "path": "/add" }
 ]
