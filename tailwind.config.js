@@ -44,6 +44,7 @@ module.exports = {
       dishpalate1: "#FBF8F1",
       success: "#4BB543",
       error: "#FF5252",
+      pagnumbers1: "#797575",
     },
     extend: {},
   },

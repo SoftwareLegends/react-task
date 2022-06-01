@@ -4,17 +4,28 @@ import axios from "axios";
 import { useTable } from "react-table/dist/react-table.development";
 import TableContentData from "./TableContentData";
 import { ContentClasses, TitleClasses } from "./TableClassServices";
+import { useDispatch, useSelector } from "react-redux";
+import { setData } from "../../data/data";
+
+window.old_snapsht = {};
 
 export default function Table() {
-  const [data, setData] = useState([]);
+  const data = useSelector((state) => state.data);
+  const filters = useSelector((state) => state.filters);
+  const dispatch = useDispatch();
+
   useEffect(() => {
     axios
-      .get("", { params: { _page: 1, _limit: 7 } })
+      .get("")
       .then((res) => {
-        setData(res.data);
+        dispatch(setData(res.data));
       })
       .catch((err) => console.log(err));
   }, []);
+
+  const chunk = useMemo(() => {
+    return data.slice(filters.page * 7 - 7, filters.page * 7);
+  }, [filters, data]);
 
   const columns = useMemo(
     () => [
@@ -29,7 +40,7 @@ export default function Table() {
     ],
     []
   );
-  const tableInstance = useTable({ columns, data });
+  const tableInstance = useTable({ columns, data: chunk });
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
     tableInstance;
   return (
@@ -64,7 +75,7 @@ export default function Table() {
                       className={`p-3 align-top border border-t-0 text-base font-normal border-semiBlack 
                       ${ContentClasses(cell.column.id)} 
                       ${
-                        index === data.length - 1
+                        index === chunk.length - 1
                           ? "first:rounded-bl-lg last:rounded-br-lg"
                           : ""
                       } 
@@ -81,8 +92,13 @@ export default function Table() {
           })}
         </tbody>
       </table>
+      {chunk.length === 0 && (
+        <div className=" my-3 text-center w-full">
+          No Data Available <br /> Remove Filters or reload the web
+        </div>
+      )}
       <br />
-      <TablePagination />
+      {chunk.length !== 0 && <TablePagination />}
     </div>
   );
 }
