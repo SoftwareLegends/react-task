@@ -7,7 +7,7 @@ import AddSetelite from "./AddSetelite";
 export default function FiltersSection() {
   const [params, setParams] = useSearchParams();
 
-  console.log(params.get("kodo") || "");
+  // console.log(params.get("kodo") || "");
   //   setParams()
   return (
     <div className="flex justify-between">

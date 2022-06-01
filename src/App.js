@@ -5,8 +5,22 @@ import Adding from "./containers/Adding";
 import { Routes, Route } from "react-router-dom";
 import Title from "./containers/Title";
 import E404 from "./components/E404";
+import axios from "axios";
+import { useDispatch } from "react-redux";
+import { changeTotalData } from "./data/TotalData";
 
 export default function App() {
+  axios.defaults.baseURL = "http://127.0.0.1:3000";
+
+  axios.interceptors.response.use((res) => {
+    console.log(res);
+    return res;
+  }, undefined);
+
+  const dispatch = useDispatch();
+
+  dispatch(changeTotalData(20));
+
   return (
     <>
       <Navigation />
