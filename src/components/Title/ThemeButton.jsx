@@ -9,9 +9,10 @@ const ThemeButton = () => {
     <DarkModeSwitch
       checked={isDark === "dark"}
       onChange={() => dispatch(changeTheming())}
-      sunColor="white"
+      sunColor="#54BAB9"
       moonColor="black"
-      className="bg-pallate1 rounded-xl w-10 h-10 p-2 float-right"
+      size={50}
+      className="transition-all hover:drop-shadow-md bg-white rounded-xl border-2 border-pallate1 w-10 h-10 p-1.5 float-right"
     />
   );
 };

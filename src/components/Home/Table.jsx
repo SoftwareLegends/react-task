@@ -10,7 +10,6 @@ export default function Table() {
   const DATA = useSelector((state) => state.data);
   const filters = useSelector((state) => state.filters);
   const columns = useMemo(() => COLUMNS, []);
-
   const data = useMemo(() => {
     let temp = DATA;
 
@@ -23,7 +22,6 @@ export default function Table() {
     }
 
     if (filters.startDate && filters.endDate) {
-      console.log();
       temp = temp.filter((el) =>
         moment(moment(el.configuredAt, "DD-MM-YYYY")).isBetween(
           moment(filters.startDate, "DD-MM-YYYY"),
@@ -31,7 +29,28 @@ export default function Table() {
         )
       );
     }
+
+    if (filters.status) {
+      const helper = filters.status === "yes";
+      temp = temp.filter((el) => el.status === helper);
+    }
+
+    if (filters.createdBy) {
+      temp = temp.filter((el) => el.createdBy === filters.createdBy);
+    }
+
+    if (filters.satelliteDishes) {
+      temp = temp.filter((el) =>
+        el.satelliteDishes.includes(filters.satelliteDishes)
+      );
+    }
+
+    if (filters.city) {
+      temp = temp.filter((el) => el.city === filters.city);
+    }
+
     return temp;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filters]);
 
   const tableInstance = useTable(

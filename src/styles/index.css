@@ -9,6 +9,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 .test {
@@ -28,6 +29,7 @@ td {
 }
 .react-datepicker-wrapper {
   position: absolute;
+  z-index: -1 !important;
 }
 
 .react-datepicker-popper {
@@ -41,4 +43,31 @@ td {
 }
 .react-datepicker__triangle {
   transform: translate3d(120px, 0px, 0px) !important;
+}
+
+.customSelectMe > div {
+  flex-direction: row-reverse;
+}
+
+.customSelectMe > div > div:nth-child(1) > div {
+  padding-left: 40px;
+}
+.customSelectMe > div > div:nth-child(2) {
+  background-color: #54bab9;
+  transform: translate(-0.4px, 0px);
+  position: absolute;
+  height: 38px;
+  top: -1px;
+  left: -0.7px;
+  border-radius: 4px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.customSelectMe > div > div:nth-child(2) > span {
+  display: none;
+}
+
+.customSelectMe input:focus {
+  outline: none;
+  border: none;
 }

@@ -10,7 +10,10 @@ import { useDispatch } from "react-redux";
 import { setData } from "./data/data";
 
 export default function App() {
+  // the second ones are online versions
+
   axios.defaults.baseURL = "http://localhost:3000/data";
+  // axios.defaults.baseURL = "https://api.jsonbin.io/b/6297dcc0402a5b3802190021";
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -18,12 +21,12 @@ export default function App() {
       .get("")
       .then((res) => {
         dispatch(setData(res.data));
-        return res;
+        // dispatch(setData(res.data.data));
       })
       .catch((err) => console.log(err));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  window.ya = (s) => s;
   return (
     <>
       <Navigation />
