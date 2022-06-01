@@ -10,16 +10,14 @@ import { useDispatch } from "react-redux";
 import { changeTotalData } from "./data/TotalData";
 
 export default function App() {
-  axios.defaults.baseURL = "http://127.0.0.1:3000";
-
-  axios.interceptors.response.use((res) => {
-    console.log(res);
-    return res;
-  }, undefined);
+  axios.defaults.baseURL = "http://localhost:3000/data";
 
   const dispatch = useDispatch();
 
-  dispatch(changeTotalData(20));
+  axios.interceptors.response.use((res) => {
+    dispatch(changeTotalData(res.headers["x-total-count"]));
+    return res;
+  }, undefined);
 
   return (
     <>
