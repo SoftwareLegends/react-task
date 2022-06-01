@@ -26,3 +26,19 @@ td {
 .ww {
   color: white;
 }
+.react-datepicker-wrapper {
+  position: absolute;
+}
+
+.react-datepicker-popper {
+  left: 7rem !important;
+  top: 0.4rem !important;
+  padding-top: 10px !important;
+}
+
+.react-datepicker__header {
+  padding-top: 35px !important;
+}
+.react-datepicker__triangle {
+  transform: translate3d(120px, 0px, 0px) !important;
+}

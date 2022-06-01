@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const filters = createSlice({
   name: "total_data",
-  initialState: { text: "" },
+  initialState: {},
   reducers: {
     setFilters: (state, { payload }) => ({ ...state, ...payload }),
   },

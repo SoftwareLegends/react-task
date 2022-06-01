@@ -5,18 +5,33 @@ import { ContentClasses, TitleClasses } from "./TableClassServices";
 import { useSelector } from "react-redux";
 import { COLUMNS } from "./columns.js";
 import { useMemo } from "react";
-
+import moment from "moment";
 export default function Table() {
   const DATA = useSelector((state) => state.data);
   const filters = useSelector((state) => state.filters);
   const columns = useMemo(() => COLUMNS, []);
 
   const data = useMemo(() => {
-    return DATA.filter(
-      (el) =>
-        el.name.toLowerCase().includes(filters.text.toLowerCase()) ||
-        el.createdBy.toLowerCase().includes(filters.text.toLowerCase())
-    );
+    let temp = DATA;
+
+    if (filters.text && filters.text !== "") {
+      temp = temp.filter(
+        (el) =>
+          el.name.toLowerCase().includes(filters.text.toLowerCase()) ||
+          el.createdBy.toLowerCase().includes(filters.text.toLowerCase())
+      );
+    }
+
+    if (filters.startDate && filters.endDate) {
+      console.log();
+      temp = temp.filter((el) =>
+        moment(moment(el.configuredAt, "DD-MM-YYYY")).isBetween(
+          moment(filters.startDate, "DD-MM-YYYY"),
+          moment(filters.endDate, "DD-MM-YYYY")
+        )
+      );
+    }
+    return temp;
   }, [filters]);
 
   const tableInstance = useTable(
