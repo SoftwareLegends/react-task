@@ -15,7 +15,10 @@ export default function App() {
   const dispatch = useDispatch();
 
   axios.interceptors.response.use((res) => {
-    dispatch(changeTotalData(res.headers["x-total-count"]));
+    // in case requested with out pagination there will be no x-total-count
+    try {
+      dispatch(changeTotalData(res.headers["x-total-count"]));
+    } catch (error) {}
     return res;
   }, undefined);
 

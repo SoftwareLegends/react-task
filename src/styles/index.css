@@ -14,3 +14,11 @@ body {
 .test {
   background: #80cfcd;
 }
+
+/* #DisplayTable */
+
+table,
+th,
+td {
+  border-spacing: 0px;
+}
