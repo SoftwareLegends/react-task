@@ -1,20 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
-const urlParams = new URLSearchParams(window.location.search);
 
-const defaults = { page: 1 };
-
-try {
-  defaults.page = parseInt(urlParams.get("page"));
-} catch (error) {}
-
-const filter = createSlice({
+const filters = createSlice({
   name: "total_data",
-  initialState: defaults,
+  initialState: { text: "" },
   reducers: {
-    setFilter: (state, { payload }) => ({ ...state, ...payload }),
+    setFilters: (state, { payload }) => ({ ...state, ...payload }),
   },
 });
 
-export const { setFilter } = filter.actions;
+export const { setFilters } = filters.actions;
 
-export default filter.reducer;
+export default filters.reducer;

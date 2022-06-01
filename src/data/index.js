@@ -1,15 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import theme from "./theme.js";
-import TotalData from "./TotalData.js";
-import filters from "./filters.js";
 import data from "./data.js";
+import filters from "./filters";
 
 const store = configureStore({
   reducer: {
     theme,
-    TotalData,
-    filters,
     data,
+    filters,
   },
 });
 

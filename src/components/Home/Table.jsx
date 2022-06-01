@@ -1,46 +1,26 @@
-import React, { useEffect, useMemo, useState } from "react";
 import TablePagination from "./TablePagination";
-import axios from "axios";
-import { useTable } from "react-table/dist/react-table.development";
+import { useTable } from "react-table";
 import TableContentData from "./TableContentData";
 import { ContentClasses, TitleClasses } from "./TableClassServices";
-import { useDispatch, useSelector } from "react-redux";
-import { setData } from "../../data/data";
-
-window.old_snapsht = {};
+import { useSelector } from "react-redux";
+import { COLUMNS } from "./columns.js";
+import { useMemo } from "react";
 
 export default function Table() {
-  const data = useSelector((state) => state.data);
+  const DATA = useSelector((state) => state.data);
   const filters = useSelector((state) => state.filters);
-  const dispatch = useDispatch();
+  const columns = useMemo(() => COLUMNS, []);
 
-  useEffect(() => {
-    axios
-      .get("")
-      .then((res) => {
-        dispatch(setData(res.data));
-      })
-      .catch((err) => console.log(err));
-  }, []);
+  const data = useMemo(() => {
+    return DATA.filter(
+      (el) =>
+        el.name.toLowerCase().includes(filters.text.toLowerCase()) ||
+        el.createdBy.toLowerCase().includes(filters.text.toLowerCase())
+    );
+  }, [filters]);
 
-  const chunk = useMemo(() => {
-    return data.slice(filters.page * 7 - 7, filters.page * 7);
-  }, [filters, data]);
+  const tableInstance = useTable({ columns, data });
 
-  const columns = useMemo(
-    () => [
-      { Header: "ID", accessor: "id" },
-      { Header: "Name", accessor: "name" },
-      { Header: "Configure Date", accessor: "configuredAt" },
-      { Header: "Created By", accessor: "createdBy" },
-      { Header: "Satellite Dishes", accessor: "satelliteDishes" },
-      { Header: "Address", accessor: "address" },
-      { Header: "Status", accessor: "status" },
-      { Header: "City", accessor: "city" },
-    ],
-    []
-  );
-  const tableInstance = useTable({ columns, data: chunk });
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
     tableInstance;
   return (
@@ -75,7 +55,7 @@ export default function Table() {
                       className={`p-3 align-top border border-t-0 text-base font-normal border-semiBlack 
                       ${ContentClasses(cell.column.id)} 
                       ${
-                        index === chunk.length - 1
+                        index === data.length - 1
                           ? "first:rounded-bl-lg last:rounded-br-lg"
                           : ""
                       } 
@@ -92,13 +72,13 @@ export default function Table() {
           })}
         </tbody>
       </table>
-      {chunk.length === 0 && (
+      {data.length === 0 && (
         <div className=" my-3 text-center w-full">
           No Data Available <br /> Remove Filters or reload the web
         </div>
       )}
       <br />
-      {chunk.length !== 0 && <TablePagination />}
+      {data.length !== 0 && <TablePagination />}
     </div>
   );
 }
