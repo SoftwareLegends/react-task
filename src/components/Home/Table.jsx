@@ -1,5 +1,5 @@
 import TablePagination from "./TablePagination";
-import { useTable } from "react-table";
+import { useTable, usePagination } from "react-table";
 import TableContentData from "./TableContentData";
 import { ContentClasses, TitleClasses } from "./TableClassServices";
 import { useSelector } from "react-redux";
@@ -19,10 +19,24 @@ export default function Table() {
     );
   }, [filters]);
 
-  const tableInstance = useTable({ columns, data });
+  const tableInstance = useTable(
+    { columns, data, initialState: { pageSize: 7 } },
+    usePagination
+  );
 
-  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
-    tableInstance;
+  const {
+    getTableProps,
+    getTableBodyProps,
+    headerGroups,
+    page,
+    prepareRow,
+    canNextPage,
+    canPreviousPage,
+    gotoPage,
+    pageCount,
+    state,
+  } = tableInstance;
+  const { pageIndex } = state;
   return (
     <div>
       <table className="mt-6 w-full border-separate" {...getTableProps()}>
@@ -44,7 +58,7 @@ export default function Table() {
           ))}
         </thead>
         <tbody {...getTableBodyProps()}>
-          {rows.map((row, index) => {
+          {page.map((row, index) => {
             prepareRow(row);
 
             return (
@@ -78,7 +92,15 @@ export default function Table() {
         </div>
       )}
       <br />
-      {data.length !== 0 && <TablePagination />}
+      {data.length !== 0 && (
+        <TablePagination
+          count={pageCount}
+          canNext={canNextPage}
+          current={pageIndex}
+          go={gotoPage}
+          canBack={canPreviousPage}
+        />
+      )}
     </div>
   );
 }
