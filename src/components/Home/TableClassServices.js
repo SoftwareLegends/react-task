@@ -27,6 +27,8 @@ export const TitleClasses = (target) => {
 export const ContentClasses = (target) => {
   if (target === "id" || target === "configuredAt") {
     return "text-center";
+  } else if (target === "satelliteDishes") {
+    return "justify-center";
   } else {
     return "";
   }

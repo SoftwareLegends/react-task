@@ -11,6 +11,7 @@ import { setData } from "./data/data";
 import ThemeButton from "./components/ThemeButton";
 import { ToastContainer } from "react-toastify";
 import Login from "./containers/Login";
+import MobileNav from "./containers/MobileNav";
 
 export default function App() {
   // the second ones are online versions
@@ -40,24 +41,27 @@ export default function App() {
   }, []);
 
   return (
-    <div className={theme}>
-      <ToastContainer />
-      <ThemeButton />
-      {me || guest ? (
-        <React.Fragment>
-          <Navigation />
-          <div className="ml-52 w-[calc(100%-13rem)] min-h-screen p-4">
-            <Title />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/add" element={<Adding />} />
-              <Route path="*" element={<E404 />} />
-            </Routes>
-          </div>
-        </React.Fragment>
-      ) : (
-        <Login />
-      )}
+    <div className={` ${theme}`}>
+      <div className="bg-white dark:bg-bgall2">
+        <ToastContainer />
+        <ThemeButton />
+        {me || guest ? (
+          <React.Fragment>
+            <Navigation />
+            <MobileNav />
+            <div className="ml-0 lg:ml-52 w-full lg:w-[calc(100%-13rem)] min-h-screen p-4">
+              <Title />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/add" element={<Adding />} />
+                <Route path="*" element={<E404 />} />
+              </Routes>
+            </div>
+          </React.Fragment>
+        ) : (
+          <Login />
+        )}
+      </div>
     </div>
   );
 }

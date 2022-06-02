@@ -10,7 +10,7 @@ const BackButton = ({ text }) => {
       onClick={() => {
         navigate("/", { replace: true });
       }}
-      className="bg-pallate1 px-5 py-3 mr-2 rounded text-white hover:scale-105 transition-all ease-in-out"
+      className="bg-pallate1 dark:bg-pallate2 px-5 py-3 mr-2 rounded text-white hover:scale-105 transition-all ease-in-out"
     >
       {text ? (
         text

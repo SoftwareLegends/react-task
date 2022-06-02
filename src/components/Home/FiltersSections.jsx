@@ -5,7 +5,7 @@ import AddSetelite from "./AddSetelite";
 
 export default function FiltersSection() {
   return (
-    <div className="flex justify-between">
+    <div className="flex flex-wrap gap-2 justify-around">
       <div className="flex items-center">
         <Filters />
         <Date />
