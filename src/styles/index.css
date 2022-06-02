@@ -32,13 +32,18 @@ td {
   z-index: -1 !important;
 }
 
-.react-datepicker-popper {
+.formd1.react-datepicker-popper {
   left: 7rem !important;
   top: 0.4rem !important;
   padding-top: 10px !important;
 }
 
-.react-datepicker__header {
+.formd2.react-datepicker-popper {
+  left: 0rem !important;
+  top: -3rem !important;
+  /* padding-top: 10px !important; */
+}
+.formd1 .react-datepicker__header {
   padding-top: 35px !important;
 }
 .react-datepicker__triangle {
@@ -47,6 +52,7 @@ td {
 
 .customSelectMe > div {
   flex-direction: row-reverse;
+  border-color: #54bab9;
 }
 
 .customSelectMe > div > div:nth-child(1) > div {

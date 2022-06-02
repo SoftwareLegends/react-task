@@ -12,7 +12,7 @@ const ThemeButton = () => {
       sunColor="#54BAB9"
       moonColor="black"
       size={50}
-      className="absolute transition-all hover:drop-shadow-md bg-white rounded-xl border-2 border-pallate1 w-10 h-10 p-1.5 right-3 top-3"
+      className="absolute transition-all hover:drop-shadow-md bg-white rounded-xl border-2 border-pallate1 w-10 h-10 p-1.5 right-4 top-3"
     />
   );
 };

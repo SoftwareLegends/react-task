@@ -1,10 +1,11 @@
 import React from "react";
-
+import AddingForm from "../containers/AddingForm";
+import Topten from "./Topten";
 export default function Adding() {
   return (
-    <>
-      <div className="w-1/2 inline-block">kodo</div>
-      <div className="w-1/2 inline-block">kodo2</div>
-    </>
+    <div className="flex">
+      <AddingForm />
+      <Topten />
+    </div>
   );
 }
