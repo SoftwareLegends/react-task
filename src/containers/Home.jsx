@@ -4,7 +4,7 @@ import Table from "../components/Home/Table";
 
 export default function Home() {
   return (
-    <div className="text-xl pt-6">
+    <div className="text-xl">
       <FiltersSection />
       <Table />
     </div>

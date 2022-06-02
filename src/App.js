@@ -8,6 +8,7 @@ import E404 from "./components/E404";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { setData } from "./data/data";
+import ThemeButton from "./components/ThemeButton";
 
 export default function App() {
   // the second ones are online versions
@@ -30,7 +31,8 @@ export default function App() {
   return (
     <>
       <Navigation />
-      <div className="ml-48 w-[calc(100%-12rem)] min-h-screen p-4">
+      <ThemeButton />
+      <div className="ml-48 w-[calc(100%-12rem)] min-h-screen p-4 mb-6">
         <Title />
         <Routes>
           <Route path="/" element={<Home />} />
