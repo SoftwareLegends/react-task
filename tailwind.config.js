@@ -46,6 +46,8 @@ module.exports = {
       error: "#FF5252",
       radioNone: "#D9D9D9",
       pagnumbers1: "#797575",
+      topSat1: "#F7ECDE",
+      topCreator1: "#FBF8F1",
     },
     extend: {},
   },

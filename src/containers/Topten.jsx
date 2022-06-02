@@ -33,8 +33,25 @@ export default function AddingForm() {
   const top = useMemo(() => topN(data, 10), [data]);
 
   return (
-    <div className="w-1/2 bg-red">
-      <div className="mb-4">Name:</div>
+    <div className="w-1/2">
+      <div className="text-lg mb-2">Lattest 10 Satellites</div>
+      <hr className="border-pallate1" />
+      {top.map((el) => (
+        <div
+          key={el.id}
+          className="bg-topSat1 my-4 rounded h-14 px-5 flex justify-between items-center cursor-pointer transition-all hover:drop-shadow-md"
+        >
+          <div>{el.name}</div>
+          <div className="flex">
+            <div className="bg-topCreator1 border-black border rounded w-32 text-center text-sm">
+              {el.createdBy}
+            </div>
+            <div className="ml-2 text-xs translate-y-0.5 text-semiBlack">
+              {el.configuredAt}
+            </div>
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

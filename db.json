@@ -1811,6 +1811,21 @@
       "status": true,
       "city": "Sulaymaniyah",
       "id": 107
+    },
+    {
+      "name": "yalla",
+      "configuredAt": "15-06-2023",
+      "createdBy": "kodo",
+      "satelliteDishes": [
+        "Dish 500"
+      ],
+      "address": {
+        "longitude": "113.132",
+        "latitude": "1302.321"
+      },
+      "status": false,
+      "city": "Kirkuk",
+      "id": 108
     }
   ]
 }
