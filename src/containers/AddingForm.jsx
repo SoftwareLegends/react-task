@@ -107,6 +107,7 @@ export default function AddingForm() {
   };
 
   const reset = (toasting = true) => {
+    document.getElementById("addFormS").reset();
     window.clearCity();
     window.clearDishes();
     setDate("");

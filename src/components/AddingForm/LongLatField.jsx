@@ -10,6 +10,7 @@ export default function LongLatField({ disable }) {
           disabled={disable}
           name="Longitude"
           type="number"
+          step="any"
           className="transition-all disabled:bg-gray-200 disabled:cursor-wait w-64 rounded text-xs mb-3 border-gray-300"
         />
         <div className="mb-1 text-sm">Latitude:</div>
@@ -17,6 +18,7 @@ export default function LongLatField({ disable }) {
           disabled={disable}
           name="Latitude"
           type="number"
+          step="any"
           className="transition-all disabled:bg-gray-200 disabled:cursor-wait w-64 rounded text-xs mb-7 border-gray-300"
         />
       </div>
