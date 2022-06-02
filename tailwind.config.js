@@ -2,12 +2,15 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
+  darkMode: "class",
   theme: {
     fontFamily: {
       sans: ['"inter"', ...defaultTheme.fontFamily.sans],
     },
     colors: {
       pallate1: "#54BAB9",
+      pallate2: "#5902EC",
+      pallate3: "#93FFD8",
       white: "#fff",
       black: "#000",
       active: "#4D4A4A",
@@ -48,6 +51,8 @@ module.exports = {
       pagnumbers1: "#797575",
       topSat1: "#F7ECDE",
       topCreator1: "#FBF8F1",
+      bgall2: "#27272A",
+      bg2all2: "#18181B",
     },
     extend: {},
   },

@@ -2,15 +2,18 @@ import React, { useState } from "react";
 import Switcher from "../components/login/Switcher";
 import loginLight from "../assets/loginlight.svg";
 import createLight from "../assets/createlight.svg";
+import loginDark from "../assets/logindark.svg";
+import createDark from "../assets/createdark.svg";
 import { toast } from "react-toastify";
 import axios from "axios";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setMe } from "../data/me";
 import { setGuest } from "../data/guest";
 
 export default function LoginContainer() {
   const [login, setLogin] = useState(true);
   const [disable, setDisable] = useState(false);
+  const theme = useSelector((state) => state.theme);
   const dispatch = useDispatch();
 
   const resetWithMessage = (type, message, e) => {
@@ -24,7 +27,7 @@ export default function LoginContainer() {
         pauseOnHover: true,
         draggable: true,
         style: { margin: 10 },
-        theme: "light",
+        theme: theme,
       });
       try {
         e.target.reset();
@@ -101,35 +104,35 @@ export default function LoginContainer() {
   };
 
   return (
-    <div className="bg-gray-200 w-screen h-screen flex justify-center items-center">
-      <div className="bg-white w-96 px-7 py-4 rounded drop-shadow-md shadow-gray-400 shadow border border-l-gray-100">
+    <div className="bg-gray-200 dark:bg-bgall2 w-screen h-screen flex justify-center items-center">
+      <div className="bg-white w-96 px-7 py-4 rounded drop-shadow-md shadow-gray-400 shadow dark:bg-bg2all2 dark:shadow-gray-900 dark:border-0 border border-l-gray-100">
         <Switcher login={login} setLogin={setLogin} />
         <div className="mb-5 transition-all h-72 relative overflow-hidden">
           <img
-            src={loginLight}
+            src={theme === "light" ? loginLight : loginDark}
             className="drop-shadow-md transition-all left-0 h-72 w-full absolute"
             alt="svg for log in"
             style={{ left: login ? "" : "24rem" }}
           />
           <img
-            src={createLight}
+            src={theme === "light" ? createLight : createDark}
             className="drop-shadow-md transition-all left-0 h-72 w-full absolute"
             alt="svg for creating account"
             style={{ left: login ? "24rem" : "" }}
           />
         </div>
         <form onSubmit={submit}>
-          <div className="text-lg">User name</div>
+          <div className="text-lg dark:text-white">User name</div>
           <input
             disabled={disable}
-            className="rounded disabled:bg-gray-200 focus:ring-pallate1 focus:border-pallate1 w-full transition-all hover:drop-shadow-md hover:shadow-md border-gray-200 border-2"
+            className="rounded disabled:bg-gray-200 focus:ring-pallate1 focus:border-pallate1 dark:disabled:bg-gray-200 dark:focus:border-pallate2 dark:focus:ring-pallate2 w-full transition-all hover:drop-shadow-md hover:shadow-md border-gray-200 border-2"
             type="text"
             name="name"
             placeholder="Type your user name"
           />
-          <div className="text-lg mt-5">Password</div>
+          <div className="text-lg mt-5 dark:text-white">Password</div>
           <input
-            className="rounded disabled:bg-gray-200 focus:ring-pallate1 focus:border-pallate1 w-full transition-all hover:drop-shadow-md hover:shadow-md border-gray-200 border-2"
+            className="rounded dark:focus:border-pallate2 dark:focus:ring-pallate2 disabled:bg-gray-200 dark:disabled:bg-gray-200 focus:ring-pallate1 focus:border-pallate1 w-full transition-all hover:drop-shadow-md hover:shadow-md border-gray-200 border-2"
             type="password"
             name="password"
             disabled={disable}
@@ -140,7 +143,7 @@ export default function LoginContainer() {
               <button
                 disabled={disable}
                 type="submit"
-                className="absolute disabled:bg-gray-300 origin-center w-28 left-0 transition-all hover:drop-shadow-md hover:shadow-md bg-pallate1 py-2 px-5 text-white rounded"
+                className="absolute dark:bg-pallate2 dark:disabled:bg-gray-300 disabled:bg-gray-300 origin-center w-28 left-0 transition-all hover:drop-shadow-md hover:shadow-md bg-pallate1 py-2 px-5 text-white rounded"
                 style={{ left: login ? "" : "24rem" }}
               >
                 Log in
@@ -148,7 +151,7 @@ export default function LoginContainer() {
               <button
                 disabled={disable}
                 type="submit"
-                className="absolute disabled:bg-gray-300 origin-center w-28 left-0 transition-all hover:drop-shadow-md hover:shadow-md bg-pallate1 py-2 px-5 text-white rounded"
+                className="absolute disabled:bg-gray-300 dark:disabled:bg-gray-300 dark:bg-pallate2 origin-center w-28 left-0 transition-all hover:drop-shadow-md hover:shadow-md bg-pallate1 py-2 px-5 text-white rounded"
                 style={{ left: login ? "24rem" : "" }}
               >
                 Create
@@ -160,7 +163,7 @@ export default function LoginContainer() {
               onClick={() => {
                 dispatch(setGuest(true));
               }}
-              className="mt-1 disabled:text-black text-pallate1 px-2 py-1"
+              className="mt-1 dark:disabled:text-gray-200 dark:text-pallate2 disabled:text-black text-pallate1 px-2 py-1"
             >
               I'm a Guest
             </button>

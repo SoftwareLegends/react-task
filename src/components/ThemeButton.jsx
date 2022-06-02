@@ -10,9 +10,9 @@ const ThemeButton = () => {
       checked={isDark === "dark"}
       onChange={() => dispatch(changeTheming())}
       sunColor="#54BAB9"
-      moonColor="black"
+      moonColor="#5902EC"
       size={50}
-      className="absolute transition-all hover:drop-shadow-md bg-white rounded-xl border-2 border-pallate1 w-10 h-10 p-1.5 right-4 top-3"
+      className="absolute dark:border-pallate2 dark:bg-bg2all2 transition-all hover:drop-shadow-md bg-white rounded-xl border-2 border-pallate1 w-10 h-10 p-1.5 right-4 top-3"
     />
   );
 };
