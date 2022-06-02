@@ -1,24 +1,14 @@
 {
   "users": [
     {
-      "name": "kodo",
-      "password": "kodokodo",
+      "name": "Hello There",
+      "password": "12345678",
       "id": 1
     },
     {
-      "name": "kodo1",
-      "password": "kodokodo",
+      "name": "kodo",
+      "password": "11112222",
       "id": 2
-    },
-    {
-      "name": "kodo2",
-      "password": "kodokodo",
-      "id": 3
-    },
-    {
-      "name": "Hello There",
-      "password": "kkkk9999",
-      "id": 4
     }
   ],
   "data": [
@@ -1725,148 +1715,20 @@
       "city": "Kirkuk"
     },
     {
-      "name": "ajkd",
-      "configuredAt": "25-06-2022",
-      "createdBy": "kodo",
+      "name": "Shlaw",
+      "configuredAt": "20-06-2022",
+      "createdBy": "Hello There",
       "satelliteDishes": [
         "Dish 500",
-        "Dish 1000",
         "Super Dish"
       ],
       "address": {
-        "longitude": "32134",
-        "latitude": "2434"
+        "longitude": "99.13",
+        "latitude": "-13.123"
       },
       "status": false,
       "city": "Kirkuk",
       "id": 101
-    },
-    {
-      "name": "ajkd",
-      "configuredAt": "25-06-2022",
-      "createdBy": "kodo",
-      "satelliteDishes": [
-        "Dish 500",
-        "Dish 1000",
-        "Super Dish"
-      ],
-      "address": {
-        "longitude": "32134",
-        "latitude": "2434"
-      },
-      "status": false,
-      "city": "Kirkuk",
-      "id": 102
-    },
-    {
-      "name": "lkjel",
-      "configuredAt": "07-06-2022",
-      "createdBy": "kodo",
-      "satelliteDishes": [
-        "Dish 500"
-      ],
-      "address": {
-        "longitude": "9932",
-        "latitude": "9924"
-      },
-      "status": false,
-      "city": "Sulaymaniyah",
-      "id": 103
-    },
-    {
-      "name": "kkkkkkkk",
-      "configuredAt": "01-06-2022",
-      "createdBy": "kodo",
-      "satelliteDishes": [
-        "Dish 1000"
-      ],
-      "address": {
-        "longitude": "11111",
-        "latitude": "11111"
-      },
-      "status": false,
-      "city": "Duhok",
-      "id": 104
-    },
-    {
-      "name": "kkkkkkkk",
-      "configuredAt": "09-06-2022",
-      "createdBy": "kodo",
-      "satelliteDishes": [
-        "Dish 1000"
-      ],
-      "address": {
-        "longitude": "11111",
-        "latitude": "11111"
-      },
-      "status": false,
-      "city": "Sulaymaniyah",
-      "id": 105
-    },
-    {
-      "name": "kodo",
-      "configuredAt": "30-05-2022",
-      "createdBy": "kodo",
-      "satelliteDishes": [
-        "Super Dish"
-      ],
-      "address": {
-        "longitude": "99.99",
-        "latitude": "99.99999"
-      },
-      "status": true,
-      "city": "Sulaymaniyah",
-      "id": 106
-    },
-    {
-      "name": "Yalla",
-      "configuredAt": "10-06-2022",
-      "createdBy": "kodo",
-      "satelliteDishes": [
-        "Dish 1000",
-        "Dish 300"
-      ],
-      "address": {
-        "longitude": "-13.213",
-        "latitude": "-23.2323"
-      },
-      "status": true,
-      "city": "Sulaymaniyah",
-      "id": 107
-    },
-    {
-      "name": "yalla",
-      "configuredAt": "15-06-2023",
-      "createdBy": "kodo",
-      "satelliteDishes": [
-        "Dish 500"
-      ],
-      "address": {
-        "longitude": "113.132",
-        "latitude": "1302.321"
-      },
-      "status": false,
-      "city": "Kirkuk",
-      "id": 108
-    },
-    {
-      "name": "shlaw",
-      "configuredAt": "20-05-2022",
-      "createdBy": {
-        "type": "me/setMe",
-        "payload": "Hello There"
-      },
-      "satelliteDishes": [
-        "Dish 1000",
-        "Dish 500"
-      ],
-      "address": {
-        "longitude": "9913.13",
-        "latitude": "-12.1232"
-      },
-      "status": false,
-      "city": "Sulaymaniyah",
-      "id": 109
     }
   ]
 }

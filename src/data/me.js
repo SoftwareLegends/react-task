@@ -8,7 +8,6 @@ const me = createSlice({
   initialState: local.get(),
   reducers: {
     setMe: (_, { payload }) => {
-      console.log(payload);
       local.set(payload);
       return payload;
     },

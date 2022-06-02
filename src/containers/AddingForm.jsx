@@ -13,7 +13,8 @@ export default function AddingForm() {
   const [date, setDate] = useState("");
   const [selected, setSelected] = useState([]);
   const [disable, setD] = useState(false);
-  // const me = useSelector((state) => state.me);
+  const me = useSelector((state) => state.me);
+
   const submiting = (e) => {
     e.preventDefault();
     const form = new FormData(e.target);
@@ -60,7 +61,7 @@ export default function AddingForm() {
       const prepareData = {
         name: easyFields[0],
         configuredAt: date,
-        createdBy: "kodo",
+        createdBy: me,
         satelliteDishes: tempDishes,
         address: {
           longitude: easyFields[2],
