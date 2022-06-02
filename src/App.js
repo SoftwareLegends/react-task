@@ -54,7 +54,9 @@ export default function App() {
           </div>
         </>
       ) : (
-        <Login />
+        <>
+          <Login />
+        </>
       )}
     </>
   );

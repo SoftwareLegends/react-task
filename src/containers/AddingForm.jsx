@@ -7,12 +7,13 @@ import StatusField from "../components/AddingForm/StatusField";
 import CityField from "../components/AddingForm/CityField";
 import { toast } from "react-toastify";
 import axios from "axios";
+import { useSelector } from "react-redux";
 
 export default function AddingForm() {
   const [date, setDate] = useState("");
   const [selected, setSelected] = useState([]);
   const [disable, setD] = useState(false);
-
+  // const me = useSelector((state) => state.me);
   const submiting = (e) => {
     e.preventDefault();
     const form = new FormData(e.target);

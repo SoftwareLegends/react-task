@@ -4,10 +4,14 @@ import locals from "./locals";
 const local = new locals("me");
 
 const me = createSlice({
-  name: "theme",
-  initialState: local.get(""),
+  name: "me",
+  initialState: local.get(),
   reducers: {
-    setMe: (_, { payload }) => payload,
+    setMe: (_, { payload }) => {
+      console.log(payload);
+      local.set(payload);
+      return payload;
+    },
   },
 });
 
