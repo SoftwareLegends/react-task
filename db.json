@@ -5,7 +5,11 @@
       "name": "Memorial",
       "configuredAt": "04-07-2021",
       "createdBy": "Zana Kamal",
-      "satelliteDishes": ["Super Dish", "Dish 1000", "Dish 500"],
+      "satelliteDishes": [
+        "Super Dish",
+        "Dish 1000",
+        "Dish 500"
+      ],
       "address": {
         "longitude": 21.3934539,
         "latitude": 49.8232218
@@ -18,7 +22,10 @@
       "name": "Kenwood",
       "configuredAt": "24-05-2021",
       "createdBy": "Muhammad Sardar",
-      "satelliteDishes": ["Dish 500", "Super Dish"],
+      "satelliteDishes": [
+        "Dish 500",
+        "Super Dish"
+      ],
       "address": {
         "longitude": 116.4073963,
         "latitude": 39.9041999
@@ -31,7 +38,11 @@
       "name": "Forest",
       "configuredAt": "12-06-2021",
       "createdBy": "Hedi Abdullah",
-      "satelliteDishes": ["Dish 500", "Dish 300", "Super Dish"],
+      "satelliteDishes": [
+        "Dish 500",
+        "Dish 300",
+        "Super Dish"
+      ],
       "address": {
         "longitude": -41.5612423,
         "latitude": -12.2684648
@@ -44,7 +55,12 @@
       "name": "Maple",
       "configuredAt": "12-03-2022",
       "createdBy": "Hedi Abdullah",
-      "satelliteDishes": ["Dish 1000", "Dish 300", "Dish 500", "Super Dish"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Dish 300",
+        "Dish 500",
+        "Super Dish"
+      ],
       "address": {
         "longitude": 131.158416,
         "latitude": 46.64635
@@ -57,7 +73,11 @@
       "name": "Sherman",
       "configuredAt": "17-01-2022",
       "createdBy": "Hedi Abdullah",
-      "satelliteDishes": ["Dish 1000", "Dish 500", "Super Dish"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Dish 500",
+        "Super Dish"
+      ],
       "address": {
         "longitude": 115.027634,
         "latitude": 23.067896
@@ -70,7 +90,11 @@
       "name": "Di Loreto",
       "configuredAt": "07-09-2021",
       "createdBy": "Zana Kamal",
-      "satelliteDishes": ["Dish 1000", "Dish 500", "Dish 300"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Dish 500",
+        "Dish 300"
+      ],
       "address": {
         "longitude": 139.5007628,
         "latitude": 35.3890138
@@ -83,7 +107,12 @@
       "name": "Norway Maple",
       "configuredAt": "11-09-2021",
       "createdBy": "Karwan Azad",
-      "satelliteDishes": ["Dish 300", "Dish 1000", "Dish 500", "Super Dish"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Dish 1000",
+        "Dish 500",
+        "Super Dish"
+      ],
       "address": {
         "longitude": 44.2538203,
         "latitude": 40.1825437
@@ -96,7 +125,12 @@
       "name": "Elgar",
       "configuredAt": "29-04-2022",
       "createdBy": "Osman Jamel",
-      "satelliteDishes": ["Dish 300", "Dish 1000", "Super Dish", "Dish 500"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Dish 1000",
+        "Super Dish",
+        "Dish 500"
+      ],
       "address": {
         "longitude": -15.8686635,
         "latitude": 13.3014073
@@ -109,7 +143,11 @@
       "name": "4th",
       "configuredAt": "03-10-2021",
       "createdBy": "Zana Kamal",
-      "satelliteDishes": ["Dish 1000", "Dish 500", "Dish 300"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Dish 500",
+        "Dish 300"
+      ],
       "address": {
         "longitude": 26.6950125,
         "latitude": 43.7633364
@@ -122,7 +160,12 @@
       "name": "School",
       "configuredAt": "06-11-2021",
       "createdBy": "Osman Jamel",
-      "satelliteDishes": ["Dish 1000", "Dish 500", "Super Dish", "Dish 300"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Dish 500",
+        "Super Dish",
+        "Dish 300"
+      ],
       "address": {
         "longitude": 133.2308851,
         "latitude": 33.3297722
@@ -135,7 +178,10 @@
       "name": "Lindbergh",
       "configuredAt": "22-09-2021",
       "createdBy": "Zana Kamal",
-      "satelliteDishes": ["Dish 1000", "Dish 500"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Dish 500"
+      ],
       "address": {
         "longitude": -40.2884386,
         "latitude": -7.740099
@@ -148,7 +194,10 @@
       "name": "Eggendart",
       "configuredAt": "15-07-2021",
       "createdBy": "Hedi Abdullah",
-      "satelliteDishes": ["Super Dish", "Dish 300"],
+      "satelliteDishes": [
+        "Super Dish",
+        "Dish 300"
+      ],
       "address": {
         "longitude": 124.2716911,
         "latitude": 8.3804095
@@ -161,7 +210,12 @@
       "name": "Susan",
       "configuredAt": "07-02-2022",
       "createdBy": "Hedi Abdullah",
-      "satelliteDishes": ["Dish 1000", "Dish 500", "Dish 300", "Super Dish"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Dish 500",
+        "Dish 300",
+        "Super Dish"
+      ],
       "address": {
         "longitude": -3.2432781,
         "latitude": 10.9578957
@@ -174,7 +228,10 @@
       "name": "Susan",
       "configuredAt": "03-01-2022",
       "createdBy": "Karwan Azad",
-      "satelliteDishes": ["Dish 1000", "Dish 300"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Dish 300"
+      ],
       "address": {
         "longitude": 119.326773,
         "latitude": 26.534726
@@ -187,7 +244,12 @@
       "name": "Buell",
       "configuredAt": "24-02-2022",
       "createdBy": "Muhammad Sardar",
-      "satelliteDishes": ["Dish 500", "Dish 1000", "Dish 300", "Super Dish"],
+      "satelliteDishes": [
+        "Dish 500",
+        "Dish 1000",
+        "Dish 300",
+        "Super Dish"
+      ],
       "address": {
         "longitude": 104.857063,
         "latitude": 26.5836
@@ -200,7 +262,12 @@
       "name": "Glendale",
       "configuredAt": "08-06-2021",
       "createdBy": "Zana Kamal",
-      "satelliteDishes": ["Super Dish", "Dish 500", "Dish 1000", "Dish 300"],
+      "satelliteDishes": [
+        "Super Dish",
+        "Dish 500",
+        "Dish 1000",
+        "Dish 300"
+      ],
       "address": {
         "longitude": 79.6785264,
         "latitude": 46.9554271
@@ -213,7 +280,11 @@
       "name": "Independence",
       "configuredAt": "10-05-2022",
       "createdBy": "Karwan Azad",
-      "satelliteDishes": ["Super Dish", "Dish 1000", "Dish 500"],
+      "satelliteDishes": [
+        "Super Dish",
+        "Dish 1000",
+        "Dish 500"
+      ],
       "address": {
         "longitude": 12.0602512,
         "latitude": 57.779138
@@ -226,7 +297,10 @@
       "name": "Nelson",
       "configuredAt": "08-07-2021",
       "createdBy": "Osman Jamel",
-      "satelliteDishes": ["Dish 500", "Dish 1000"],
+      "satelliteDishes": [
+        "Dish 500",
+        "Dish 1000"
+      ],
       "address": {
         "longitude": 17.9674784,
         "latitude": 59.2762554
@@ -239,7 +313,11 @@
       "name": "Quincy",
       "configuredAt": "09-11-2021",
       "createdBy": "Muhammad Sardar",
-      "satelliteDishes": ["Dish 300", "Dish 1000", "Super Dish"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Dish 1000",
+        "Super Dish"
+      ],
       "address": {
         "longitude": -83.1488186,
         "latitude": 42.2827426
@@ -252,7 +330,11 @@
       "name": "Aberg",
       "configuredAt": "11-09-2021",
       "createdBy": "Zana Kamal",
-      "satelliteDishes": ["Dish 1000", "Dish 300", "Super Dish"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Dish 300",
+        "Super Dish"
+      ],
       "address": {
         "longitude": 115.147814,
         "latitude": 36.285616
@@ -265,7 +347,12 @@
       "name": "Farragut",
       "configuredAt": "12-01-2022",
       "createdBy": "Osman Jamel",
-      "satelliteDishes": ["Dish 300", "Super Dish", "Dish 500", "Dish 1000"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Super Dish",
+        "Dish 500",
+        "Dish 1000"
+      ],
       "address": {
         "longitude": -66.0671709,
         "latitude": 18.4180126
@@ -278,7 +365,10 @@
       "name": "Melody",
       "configuredAt": "10-04-2022",
       "createdBy": "Zana Kamal",
-      "satelliteDishes": ["Dish 300", "Super Dish"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Super Dish"
+      ],
       "address": {
         "longitude": 123.9469641,
         "latitude": 9.9368373
@@ -291,7 +381,11 @@
       "name": "Portage",
       "configuredAt": "23-10-2021",
       "createdBy": "Karwan Azad",
-      "satelliteDishes": ["Dish 1000", "Dish 500", "Dish 300"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Dish 500",
+        "Dish 300"
+      ],
       "address": {
         "longitude": 18.7713574,
         "latitude": 49.9636769
@@ -304,7 +398,12 @@
       "name": "Boyd",
       "configuredAt": "20-04-2022",
       "createdBy": "Karwan Azad",
-      "satelliteDishes": ["Super Dish", "Dish 1000", "Dish 300", "Dish 500"],
+      "satelliteDishes": [
+        "Super Dish",
+        "Dish 1000",
+        "Dish 300",
+        "Dish 500"
+      ],
       "address": {
         "longitude": 10.0191857,
         "latitude": 5.8874488
@@ -317,7 +416,12 @@
       "name": "Clemons",
       "configuredAt": "08-08-2021",
       "createdBy": "Karwan Azad",
-      "satelliteDishes": ["Dish 300", "Super Dish", "Dish 500", "Dish 1000"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Super Dish",
+        "Dish 500",
+        "Dish 1000"
+      ],
       "address": {
         "longitude": 16.9564844,
         "latitude": 51.6551687
@@ -330,7 +434,11 @@
       "name": "Lakeland",
       "configuredAt": "14-07-2021",
       "createdBy": "Hedi Abdullah",
-      "satelliteDishes": ["Dish 500", "Dish 1000", "Dish 300"],
+      "satelliteDishes": [
+        "Dish 500",
+        "Dish 1000",
+        "Dish 300"
+      ],
       "address": {
         "longitude": 17.8864717,
         "latitude": 59.2527176
@@ -343,7 +451,12 @@
       "name": "Pine View",
       "configuredAt": "18-09-2021",
       "createdBy": "Zana Kamal",
-      "satelliteDishes": ["Super Dish", "Dish 300", "Dish 500", "Dish 1000"],
+      "satelliteDishes": [
+        "Super Dish",
+        "Dish 300",
+        "Dish 500",
+        "Dish 1000"
+      ],
       "address": {
         "longitude": 105.6837789,
         "latitude": -5.7301845
@@ -356,7 +469,12 @@
       "name": "Waywood",
       "configuredAt": "02-05-2022",
       "createdBy": "Karwan Azad",
-      "satelliteDishes": ["Dish 1000", "Super Dish", "Dish 500", "Dish 300"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Super Dish",
+        "Dish 500",
+        "Dish 300"
+      ],
       "address": {
         "longitude": 101.3052635,
         "latitude": 13.8170825
@@ -369,7 +487,10 @@
       "name": "Laurel",
       "configuredAt": "28-01-2022",
       "createdBy": "Muhammad Sardar",
-      "satelliteDishes": ["Dish 1000", "Dish 300"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Dish 300"
+      ],
       "address": {
         "longitude": 117.218044,
         "latitude": 39.19537
@@ -382,7 +503,10 @@
       "name": "Homewood",
       "configuredAt": "07-02-2022",
       "createdBy": "Osman Jamel",
-      "satelliteDishes": ["Dish 300", "Dish 500"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Dish 500"
+      ],
       "address": {
         "longitude": 117.8333333,
         "latitude": 30.4333333
@@ -395,7 +519,12 @@
       "name": "Nancy",
       "configuredAt": "04-07-2021",
       "createdBy": "Osman Jamel",
-      "satelliteDishes": ["Dish 1000", "Dish 500", "Super Dish", "Dish 300"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Dish 500",
+        "Super Dish",
+        "Dish 300"
+      ],
       "address": {
         "longitude": -6.2755912,
         "latitude": 53.3500473
@@ -408,7 +537,10 @@
       "name": "Holmberg",
       "configuredAt": "27-11-2021",
       "createdBy": "Hedi Abdullah",
-      "satelliteDishes": ["Dish 1000", "Super Dish"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Super Dish"
+      ],
       "address": {
         "longitude": 25.3449259,
         "latitude": 48.3583839
@@ -421,7 +553,12 @@
       "name": "Norway Maple",
       "configuredAt": "18-04-2022",
       "createdBy": "Osman Jamel",
-      "satelliteDishes": ["Super Dish", "Dish 500", "Dish 300", "Dish 1000"],
+      "satelliteDishes": [
+        "Super Dish",
+        "Dish 500",
+        "Dish 300",
+        "Dish 1000"
+      ],
       "address": {
         "longitude": -58.5247124,
         "latitude": -34.6893026
@@ -434,7 +571,12 @@
       "name": "Scoville",
       "configuredAt": "31-12-2021",
       "createdBy": "Zana Kamal",
-      "satelliteDishes": ["Dish 300", "Dish 1000", "Dish 500", "Super Dish"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Dish 1000",
+        "Dish 500",
+        "Super Dish"
+      ],
       "address": {
         "longitude": 108.4127686,
         "latitude": -7.177049
@@ -447,7 +589,12 @@
       "name": "Arapahoe",
       "configuredAt": "19-08-2021",
       "createdBy": "Karwan Azad",
-      "satelliteDishes": ["Dish 500", "Super Dish", "Dish 300", "Dish 1000"],
+      "satelliteDishes": [
+        "Dish 500",
+        "Super Dish",
+        "Dish 300",
+        "Dish 1000"
+      ],
       "address": {
         "longitude": 109.24473,
         "latitude": 24.651518
@@ -460,7 +607,10 @@
       "name": "Birchwood",
       "configuredAt": "04-12-2021",
       "createdBy": "Zana Kamal",
-      "satelliteDishes": ["Dish 300", "Dish 1000"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Dish 1000"
+      ],
       "address": {
         "longitude": 0.7770529,
         "latitude": 9.2610914
@@ -473,7 +623,10 @@
       "name": "Burning Wood",
       "configuredAt": "19-07-2021",
       "createdBy": "Osman Jamel",
-      "satelliteDishes": ["Dish 1000", "Super Dish"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Super Dish"
+      ],
       "address": {
         "longitude": 19.3776743,
         "latitude": 44.1884454
@@ -486,7 +639,11 @@
       "name": "Main",
       "configuredAt": "24-02-2022",
       "createdBy": "Osman Jamel",
-      "satelliteDishes": ["Dish 500", "Super Dish", "Dish 1000"],
+      "satelliteDishes": [
+        "Dish 500",
+        "Super Dish",
+        "Dish 1000"
+      ],
       "address": {
         "longitude": 112.35563,
         "latitude": 45.72727
@@ -499,7 +656,11 @@
       "name": "Emmet",
       "configuredAt": "30-03-2022",
       "createdBy": "Karwan Azad",
-      "satelliteDishes": ["Dish 1000", "Super Dish", "Dish 300"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Super Dish",
+        "Dish 300"
+      ],
       "address": {
         "longitude": -89.8493309,
         "latitude": 13.8694082
@@ -512,7 +673,11 @@
       "name": "Katie",
       "configuredAt": "06-05-2022",
       "createdBy": "Hedi Abdullah",
-      "satelliteDishes": ["Super Dish", "Dish 300", "Dish 500"],
+      "satelliteDishes": [
+        "Super Dish",
+        "Dish 300",
+        "Dish 500"
+      ],
       "address": {
         "longitude": 106.7529514,
         "latitude": -7.4220343
@@ -525,7 +690,10 @@
       "name": "Dahle",
       "configuredAt": "27-11-2021",
       "createdBy": "Muhammad Sardar",
-      "satelliteDishes": ["Dish 300", "Dish 500"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Dish 500"
+      ],
       "address": {
         "longitude": 36.6255869,
         "latitude": 32.8568937
@@ -538,7 +706,10 @@
       "name": "Cottonwood",
       "configuredAt": "25-04-2022",
       "createdBy": "Muhammad Sardar",
-      "satelliteDishes": ["Dish 500", "Dish 1000"],
+      "satelliteDishes": [
+        "Dish 500",
+        "Dish 1000"
+      ],
       "address": {
         "longitude": 5.534063,
         "latitude": 45.70734
@@ -551,7 +722,10 @@
       "name": "Roth",
       "configuredAt": "03-09-2021",
       "createdBy": "Hedi Abdullah",
-      "satelliteDishes": ["Super Dish", "Dish 300"],
+      "satelliteDishes": [
+        "Super Dish",
+        "Dish 300"
+      ],
       "address": {
         "longitude": -60.6961061,
         "latitude": -32.9377962
@@ -564,7 +738,10 @@
       "name": "Center",
       "configuredAt": "27-11-2021",
       "createdBy": "Hedi Abdullah",
-      "satelliteDishes": ["Dish 300", "Dish 500"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Dish 500"
+      ],
       "address": {
         "longitude": 109.667164,
         "latitude": 28.90499
@@ -577,7 +754,11 @@
       "name": "Wayridge",
       "configuredAt": "07-12-2021",
       "createdBy": "Osman Jamel",
-      "satelliteDishes": ["Dish 1000", "Dish 500", "Dish 300"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Dish 500",
+        "Dish 300"
+      ],
       "address": {
         "longitude": 2.3468195,
         "latitude": 6.4503024
@@ -590,7 +771,11 @@
       "name": "Green",
       "configuredAt": "28-12-2021",
       "createdBy": "Hedi Abdullah",
-      "satelliteDishes": ["Super Dish", "Dish 500", "Dish 300"],
+      "satelliteDishes": [
+        "Super Dish",
+        "Dish 500",
+        "Dish 300"
+      ],
       "address": {
         "longitude": 46.7655746,
         "latitude": 39.8265279
@@ -603,7 +788,10 @@
       "name": "Wayridge",
       "configuredAt": "18-06-2021",
       "createdBy": "Osman Jamel",
-      "satelliteDishes": ["Dish 500", "Dish 300"],
+      "satelliteDishes": [
+        "Dish 500",
+        "Dish 300"
+      ],
       "address": {
         "longitude": 62.13917,
         "latitude": 34.79951
@@ -616,7 +804,12 @@
       "name": "Anderson",
       "configuredAt": "10-01-2022",
       "createdBy": "Muhammad Sardar",
-      "satelliteDishes": ["Super Dish", "Dish 300", "Dish 1000", "Dish 500"],
+      "satelliteDishes": [
+        "Super Dish",
+        "Dish 300",
+        "Dish 1000",
+        "Dish 500"
+      ],
       "address": {
         "longitude": 99.3451118,
         "latitude": 0.2770603
@@ -629,7 +822,11 @@
       "name": "Johnson",
       "configuredAt": "15-10-2021",
       "createdBy": "Zana Kamal",
-      "satelliteDishes": ["Dish 500", "Super Dish", "Dish 1000"],
+      "satelliteDishes": [
+        "Dish 500",
+        "Super Dish",
+        "Dish 1000"
+      ],
       "address": {
         "longitude": 110.037503,
         "latitude": 18.506048
@@ -642,7 +839,12 @@
       "name": "Bunker Hill",
       "configuredAt": "20-03-2022",
       "createdBy": "Karwan Azad",
-      "satelliteDishes": ["Super Dish", "Dish 1000", "Dish 500", "Dish 300"],
+      "satelliteDishes": [
+        "Super Dish",
+        "Dish 1000",
+        "Dish 500",
+        "Dish 300"
+      ],
       "address": {
         "longitude": -8.1464077,
         "latitude": 41.6429311
@@ -655,7 +857,12 @@
       "name": "Artisan",
       "configuredAt": "04-06-2021",
       "createdBy": "Karwan Azad",
-      "satelliteDishes": ["Dish 1000", "Dish 300", "Dish 500", "Super Dish"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Dish 300",
+        "Dish 500",
+        "Super Dish"
+      ],
       "address": {
         "longitude": 105.6823124,
         "latitude": -5.3003056
@@ -668,7 +875,12 @@
       "name": "Columbus",
       "configuredAt": "15-12-2021",
       "createdBy": "Hedi Abdullah",
-      "satelliteDishes": ["Super Dish", "Dish 500", "Dish 300", "Dish 1000"],
+      "satelliteDishes": [
+        "Super Dish",
+        "Dish 500",
+        "Dish 300",
+        "Dish 1000"
+      ],
       "address": {
         "longitude": 23.4027578,
         "latitude": 50.5368321
@@ -681,7 +893,11 @@
       "name": "Twin Pines",
       "configuredAt": "09-09-2021",
       "createdBy": "Hedi Abdullah",
-      "satelliteDishes": ["Dish 300", "Super Dish", "Dish 500"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Super Dish",
+        "Dish 500"
+      ],
       "address": {
         "longitude": 27.9918895,
         "latitude": 52.7990255
@@ -694,7 +910,11 @@
       "name": "David",
       "configuredAt": "01-10-2021",
       "createdBy": "Osman Jamel",
-      "satelliteDishes": ["Dish 1000", "Super Dish", "Dish 500"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Super Dish",
+        "Dish 500"
+      ],
       "address": {
         "longitude": 1.820875,
         "latitude": 47.5113895
@@ -707,7 +927,12 @@
       "name": "Burning Wood",
       "configuredAt": "29-06-2021",
       "createdBy": "Hedi Abdullah",
-      "satelliteDishes": ["Dish 1000", "Dish 500", "Dish 300", "Super Dish"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Dish 500",
+        "Dish 300",
+        "Super Dish"
+      ],
       "address": {
         "longitude": 112.410073,
         "latitude": 27.920538
@@ -720,7 +945,10 @@
       "name": "Butterfield",
       "configuredAt": "05-06-2021",
       "createdBy": "Hedi Abdullah",
-      "satelliteDishes": ["Dish 300", "Dish 1000"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Dish 1000"
+      ],
       "address": {
         "longitude": 10.8203114,
         "latitude": 59.9251831
@@ -733,7 +961,10 @@
       "name": "Aberg",
       "configuredAt": "03-07-2021",
       "createdBy": "Zana Kamal",
-      "satelliteDishes": ["Dish 300", "Super Dish"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Super Dish"
+      ],
       "address": {
         "longitude": -81.734942,
         "latitude": 26.8844636
@@ -746,7 +977,11 @@
       "name": "1st",
       "configuredAt": "13-06-2021",
       "createdBy": "Zana Kamal",
-      "satelliteDishes": ["Dish 1000", "Super Dish", "Dish 500"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Super Dish",
+        "Dish 500"
+      ],
       "address": {
         "longitude": -8.540112,
         "latitude": 41.3537964
@@ -759,7 +994,11 @@
       "name": "Kennedy",
       "configuredAt": "01-02-2022",
       "createdBy": "Hedi Abdullah",
-      "satelliteDishes": ["Super Dish", "Dish 500", "Dish 1000"],
+      "satelliteDishes": [
+        "Super Dish",
+        "Dish 500",
+        "Dish 1000"
+      ],
       "address": {
         "longitude": 128.941023,
         "latitude": -8.219061
@@ -772,7 +1011,10 @@
       "name": "Vermont",
       "configuredAt": "26-07-2021",
       "createdBy": "Hedi Abdullah",
-      "satelliteDishes": ["Dish 1000", "Dish 300"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Dish 300"
+      ],
       "address": {
         "longitude": 115.110483,
         "latitude": 35.904442
@@ -785,7 +1027,11 @@
       "name": "Novick",
       "configuredAt": "18-12-2021",
       "createdBy": "Muhammad Sardar",
-      "satelliteDishes": ["Dish 300", "Dish 1000", "Dish 500"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Dish 1000",
+        "Dish 500"
+      ],
       "address": {
         "longitude": 124.6248039,
         "latitude": -9.9097428
@@ -798,7 +1044,10 @@
       "name": "Transport",
       "configuredAt": "22-07-2021",
       "createdBy": "Osman Jamel",
-      "satelliteDishes": ["Dish 500", "Dish 300"],
+      "satelliteDishes": [
+        "Dish 500",
+        "Dish 300"
+      ],
       "address": {
         "longitude": -55.5392304,
         "latitude": -30.8772854
@@ -811,7 +1060,12 @@
       "name": "Buell",
       "configuredAt": "11-02-2022",
       "createdBy": "Osman Jamel",
-      "satelliteDishes": ["Dish 300", "Super Dish", "Dish 1000", "Dish 500"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Super Dish",
+        "Dish 1000",
+        "Dish 500"
+      ],
       "address": {
         "longitude": -77.4128193,
         "latitude": 1.5316053
@@ -824,7 +1078,12 @@
       "name": "Doe Crossing",
       "configuredAt": "02-01-2022",
       "createdBy": "Hedi Abdullah",
-      "satelliteDishes": ["Dish 300", "Dish 1000", "Super Dish", "Dish 500"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Dish 1000",
+        "Super Dish",
+        "Dish 500"
+      ],
       "address": {
         "longitude": 111.0460407,
         "latitude": -7.6387228
@@ -837,7 +1096,10 @@
       "name": "Upham",
       "configuredAt": "18-11-2021",
       "createdBy": "Karwan Azad",
-      "satelliteDishes": ["Super Dish", "Dish 300"],
+      "satelliteDishes": [
+        "Super Dish",
+        "Dish 300"
+      ],
       "address": {
         "longitude": 7.4922407,
         "latitude": 5.5249526
@@ -850,7 +1112,10 @@
       "name": "Westerfield",
       "configuredAt": "24-01-2022",
       "createdBy": "Muhammad Sardar",
-      "satelliteDishes": ["Dish 300", "Dish 500"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Dish 500"
+      ],
       "address": {
         "longitude": 112.497228,
         "latitude": 27.955261
@@ -863,7 +1128,12 @@
       "name": "Bashford",
       "configuredAt": "17-07-2021",
       "createdBy": "Karwan Azad",
-      "satelliteDishes": ["Dish 500", "Dish 1000", "Dish 300", "Super Dish"],
+      "satelliteDishes": [
+        "Dish 500",
+        "Dish 1000",
+        "Dish 300",
+        "Super Dish"
+      ],
       "address": {
         "longitude": 121.0190818,
         "latitude": 14.5697429
@@ -876,7 +1146,11 @@
       "name": "Ruskin",
       "configuredAt": "07-11-2021",
       "createdBy": "Hedi Abdullah",
-      "satelliteDishes": ["Super Dish", "Dish 300", "Dish 1000"],
+      "satelliteDishes": [
+        "Super Dish",
+        "Dish 300",
+        "Dish 1000"
+      ],
       "address": {
         "longitude": -8.2637978,
         "latitude": 41.5493752
@@ -889,7 +1163,11 @@
       "name": "Calypso",
       "configuredAt": "27-02-2022",
       "createdBy": "Osman Jamel",
-      "satelliteDishes": ["Dish 300", "Super Dish", "Dish 1000"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Super Dish",
+        "Dish 1000"
+      ],
       "address": {
         "longitude": 125.450296,
         "latitude": 12.14428
@@ -902,7 +1180,11 @@
       "name": "Melby",
       "configuredAt": "25-08-2021",
       "createdBy": "Muhammad Sardar",
-      "satelliteDishes": ["Dish 500", "Dish 1000", "Dish 300"],
+      "satelliteDishes": [
+        "Dish 500",
+        "Dish 1000",
+        "Dish 300"
+      ],
       "address": {
         "longitude": 120.562011,
         "latitude": 28.311573
@@ -915,7 +1197,11 @@
       "name": "Mccormick",
       "configuredAt": "12-12-2021",
       "createdBy": "Hedi Abdullah",
-      "satelliteDishes": ["Dish 300", "Dish 500", "Super Dish"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Dish 500",
+        "Super Dish"
+      ],
       "address": {
         "longitude": 44.9621678,
         "latitude": 41.7260416
@@ -928,7 +1214,10 @@
       "name": "Morrow",
       "configuredAt": "14-01-2022",
       "createdBy": "Zana Kamal",
-      "satelliteDishes": ["Dish 1000", "Dish 500"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Dish 500"
+      ],
       "address": {
         "longitude": 20.3941836,
         "latitude": 40.7065855
@@ -941,7 +1230,11 @@
       "name": "Grover",
       "configuredAt": "06-06-2021",
       "createdBy": "Muhammad Sardar",
-      "satelliteDishes": ["Dish 300", "Super Dish", "Dish 1000"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Super Dish",
+        "Dish 1000"
+      ],
       "address": {
         "longitude": 122.1700081,
         "latitude": 40.1919977
@@ -954,7 +1247,11 @@
       "name": "Brentwood",
       "configuredAt": "10-11-2021",
       "createdBy": "Zana Kamal",
-      "satelliteDishes": ["Dish 500", "Super Dish", "Dish 300"],
+      "satelliteDishes": [
+        "Dish 500",
+        "Super Dish",
+        "Dish 300"
+      ],
       "address": {
         "longitude": -74.354009,
         "latitude": 4.809984
@@ -967,7 +1264,12 @@
       "name": "Dorton",
       "configuredAt": "02-05-2022",
       "createdBy": "Zana Kamal",
-      "satelliteDishes": ["Dish 500", "Dish 1000", "Super Dish", "Dish 300"],
+      "satelliteDishes": [
+        "Dish 500",
+        "Dish 1000",
+        "Super Dish",
+        "Dish 300"
+      ],
       "address": {
         "longitude": -74.3132878,
         "latitude": -13.9448918
@@ -980,7 +1282,12 @@
       "name": "Michigan",
       "configuredAt": "26-10-2021",
       "createdBy": "Osman Jamel",
-      "satelliteDishes": ["Dish 1000", "Dish 300", "Dish 500", "Super Dish"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Dish 300",
+        "Dish 500",
+        "Super Dish"
+      ],
       "address": {
         "longitude": -78.9344814,
         "latitude": 42.9038743
@@ -993,7 +1300,12 @@
       "name": "Riverside",
       "configuredAt": "09-05-2022",
       "createdBy": "Zana Kamal",
-      "satelliteDishes": ["Super Dish", "Dish 500", "Dish 1000", "Dish 300"],
+      "satelliteDishes": [
+        "Super Dish",
+        "Dish 500",
+        "Dish 1000",
+        "Dish 300"
+      ],
       "address": {
         "longitude": 24.498407,
         "latitude": 58.4286125
@@ -1006,7 +1318,11 @@
       "name": "Raven",
       "configuredAt": "02-09-2021",
       "createdBy": "Muhammad Sardar",
-      "satelliteDishes": ["Super Dish", "Dish 300", "Dish 1000"],
+      "satelliteDishes": [
+        "Super Dish",
+        "Dish 300",
+        "Dish 1000"
+      ],
       "address": {
         "longitude": 113.4686802,
         "latitude": -8.3162866
@@ -1019,7 +1335,10 @@
       "name": "Truax",
       "configuredAt": "18-06-2021",
       "createdBy": "Hedi Abdullah",
-      "satelliteDishes": ["Dish 500", "Dish 1000"],
+      "satelliteDishes": [
+        "Dish 500",
+        "Dish 1000"
+      ],
       "address": {
         "longitude": 18.6758688,
         "latitude": 45.0783589
@@ -1032,7 +1351,10 @@
       "name": "Myrtle",
       "configuredAt": "19-09-2021",
       "createdBy": "Karwan Azad",
-      "satelliteDishes": ["Dish 1000", "Dish 500"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Dish 500"
+      ],
       "address": {
         "longitude": 34.4903399,
         "latitude": 52.1490959
@@ -1045,7 +1367,12 @@
       "name": "Brown",
       "configuredAt": "23-09-2021",
       "createdBy": "Muhammad Sardar",
-      "satelliteDishes": ["Super Dish", "Dish 500", "Dish 300", "Dish 1000"],
+      "satelliteDishes": [
+        "Super Dish",
+        "Dish 500",
+        "Dish 300",
+        "Dish 1000"
+      ],
       "address": {
         "longitude": 106.8370122,
         "latitude": -6.6359299
@@ -1058,7 +1385,11 @@
       "name": "Algoma",
       "configuredAt": "21-07-2021",
       "createdBy": "Muhammad Sardar",
-      "satelliteDishes": ["Dish 300", "Dish 500", "Super Dish"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Dish 500",
+        "Super Dish"
+      ],
       "address": {
         "longitude": 127.464602,
         "latitude": 41.516494
@@ -1071,7 +1402,11 @@
       "name": "Carey",
       "configuredAt": "25-12-2021",
       "createdBy": "Muhammad Sardar",
-      "satelliteDishes": ["Super Dish", "Dish 500", "Dish 300"],
+      "satelliteDishes": [
+        "Super Dish",
+        "Dish 500",
+        "Dish 300"
+      ],
       "address": {
         "longitude": 121.918866,
         "latitude": -8.7394711
@@ -1084,7 +1419,11 @@
       "name": "Mifflin",
       "configuredAt": "28-12-2021",
       "createdBy": "Hedi Abdullah",
-      "satelliteDishes": ["Dish 500", "Dish 300", "Super Dish"],
+      "satelliteDishes": [
+        "Dish 500",
+        "Dish 300",
+        "Super Dish"
+      ],
       "address": {
         "longitude": -53.8154499,
         "latitude": -29.68725
@@ -1097,7 +1436,11 @@
       "name": "Village",
       "configuredAt": "19-07-2021",
       "createdBy": "Hedi Abdullah",
-      "satelliteDishes": ["Dish 1000", "Super Dish", "Dish 500"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Super Dish",
+        "Dish 500"
+      ],
       "address": {
         "longitude": 85.38086,
         "latitude": 44.055922
@@ -1110,7 +1453,12 @@
       "name": "Moulton",
       "configuredAt": "08-12-2021",
       "createdBy": "Muhammad Sardar",
-      "satelliteDishes": ["Dish 300", "Dish 1000", "Super Dish", "Dish 500"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Dish 1000",
+        "Super Dish",
+        "Dish 500"
+      ],
       "address": {
         "longitude": -8.7269577,
         "latitude": 39.0614002
@@ -1123,7 +1471,12 @@
       "name": "7th",
       "configuredAt": "25-08-2021",
       "createdBy": "Muhammad Sardar",
-      "satelliteDishes": ["Dish 500", "Super Dish", "Dish 1000", "Dish 300"],
+      "satelliteDishes": [
+        "Dish 500",
+        "Super Dish",
+        "Dish 1000",
+        "Dish 300"
+      ],
       "address": {
         "longitude": 113.7365072,
         "latitude": -7.9903162
@@ -1136,7 +1489,10 @@
       "name": "Waubesa",
       "configuredAt": "18-02-2022",
       "createdBy": "Muhammad Sardar",
-      "satelliteDishes": ["Dish 500", "Super Dish"],
+      "satelliteDishes": [
+        "Dish 500",
+        "Super Dish"
+      ],
       "address": {
         "longitude": 44.21708,
         "latitude": 13.32887
@@ -1149,7 +1505,10 @@
       "name": "2nd",
       "configuredAt": "24-01-2022",
       "createdBy": "Karwan Azad",
-      "satelliteDishes": ["Dish 500", "Dish 300"],
+      "satelliteDishes": [
+        "Dish 500",
+        "Dish 300"
+      ],
       "address": {
         "longitude": 114.322047,
         "latitude": 38.088041
@@ -1162,7 +1521,11 @@
       "name": "Burning Wood",
       "configuredAt": "11-04-2022",
       "createdBy": "Zana Kamal",
-      "satelliteDishes": ["Super Dish", "Dish 500", "Dish 300"],
+      "satelliteDishes": [
+        "Super Dish",
+        "Dish 500",
+        "Dish 300"
+      ],
       "address": {
         "longitude": -66.8869412,
         "latitude": 50.0234664
@@ -1175,7 +1538,10 @@
       "name": "Straubel",
       "configuredAt": "20-06-2021",
       "createdBy": "Muhammad Sardar",
-      "satelliteDishes": ["Super Dish", "Dish 300"],
+      "satelliteDishes": [
+        "Super Dish",
+        "Dish 300"
+      ],
       "address": {
         "longitude": -7.4976536,
         "latitude": 6.5490578
@@ -1188,7 +1554,10 @@
       "name": "Hintze",
       "configuredAt": "26-06-2021",
       "createdBy": "Karwan Azad",
-      "satelliteDishes": ["Dish 500", "Dish 1000"],
+      "satelliteDishes": [
+        "Dish 500",
+        "Dish 1000"
+      ],
       "address": {
         "longitude": -48.184644,
         "latitude": -21.8022635
@@ -1201,7 +1570,12 @@
       "name": "Arizona",
       "configuredAt": "12-09-2021",
       "createdBy": "Zana Kamal",
-      "satelliteDishes": ["Dish 300", "Super Dish", "Dish 500", "Dish 1000"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Super Dish",
+        "Dish 500",
+        "Dish 1000"
+      ],
       "address": {
         "longitude": 37.6998424,
         "latitude": 11.9227104
@@ -1214,7 +1588,10 @@
       "name": "Victoria",
       "configuredAt": "21-10-2021",
       "createdBy": "Osman Jamel",
-      "satelliteDishes": ["Super Dish", "Dish 1000"],
+      "satelliteDishes": [
+        "Super Dish",
+        "Dish 1000"
+      ],
       "address": {
         "longitude": 116.475481,
         "latitude": 30.235005
@@ -1227,7 +1604,12 @@
       "name": "Darwin",
       "configuredAt": "22-06-2021",
       "createdBy": "Zana Kamal",
-      "satelliteDishes": ["Dish 300", "Super Dish", "Dish 1000", "Dish 500"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Super Dish",
+        "Dish 1000",
+        "Dish 500"
+      ],
       "address": {
         "longitude": 120.382609,
         "latitude": 36.067108
@@ -1240,7 +1622,12 @@
       "name": "Summerview",
       "configuredAt": "15-08-2021",
       "createdBy": "Zana Kamal",
-      "satelliteDishes": ["Dish 300", "Dish 1000", "Dish 500", "Super Dish"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Dish 1000",
+        "Dish 500",
+        "Super Dish"
+      ],
       "address": {
         "longitude": 13.7439605,
         "latitude": 45.5535581
@@ -1253,7 +1640,11 @@
       "name": "Oxford",
       "configuredAt": "13-09-2021",
       "createdBy": "Muhammad Sardar",
-      "satelliteDishes": ["Dish 300", "Super Dish", "Dish 500"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Super Dish",
+        "Dish 500"
+      ],
       "address": {
         "longitude": -63.7716391,
         "latitude": 46.4027492
@@ -1266,7 +1657,11 @@
       "name": "Charing Cross",
       "configuredAt": "18-12-2021",
       "createdBy": "Karwan Azad",
-      "satelliteDishes": ["Dish 500", "Super Dish", "Dish 1000"],
+      "satelliteDishes": [
+        "Dish 500",
+        "Super Dish",
+        "Dish 1000"
+      ],
       "address": {
         "longitude": 18.7713104,
         "latitude": 50.0898667
@@ -1279,7 +1674,10 @@
       "name": "Sheridan",
       "configuredAt": "08-02-2022",
       "createdBy": "Muhammad Sardar",
-      "satelliteDishes": ["Dish 300", "Dish 500"],
+      "satelliteDishes": [
+        "Dish 300",
+        "Dish 500"
+      ],
       "address": {
         "longitude": 20.0553882,
         "latitude": 41.6755501
@@ -1292,13 +1690,66 @@
       "name": "Eastlawn",
       "configuredAt": "09-01-2022",
       "createdBy": "Muhammad Sardar",
-      "satelliteDishes": ["Dish 1000", "Super Dish", "Dish 500"],
+      "satelliteDishes": [
+        "Dish 1000",
+        "Super Dish",
+        "Dish 500"
+      ],
       "address": {
         "longitude": -72.3355683,
         "latitude": -14.0893344
       },
       "status": false,
       "city": "Kirkuk"
+    },
+    {
+      "name": "ajkd",
+      "configuredAt": "25-06-2022",
+      "createdBy": "kodo",
+      "satelliteDishes": [
+        "Dish 500",
+        "Dish 1000",
+        "Super Dish"
+      ],
+      "address": {
+        "longitude": "32134",
+        "latitude": "2434"
+      },
+      "status": false,
+      "city": "Kirkuk",
+      "id": 101
+    },
+    {
+      "name": "ajkd",
+      "configuredAt": "25-06-2022",
+      "createdBy": "kodo",
+      "satelliteDishes": [
+        "Dish 500",
+        "Dish 1000",
+        "Super Dish"
+      ],
+      "address": {
+        "longitude": "32134",
+        "latitude": "2434"
+      },
+      "status": false,
+      "city": "Kirkuk",
+      "id": 102
+    },
+    {
+      "name": "lkjel",
+      "configuredAt": "07-06-2022",
+      "createdBy": "kodo",
+      "satelliteDishes": [
+        "Dish 500"
+      ],
+      "address": {
+        "longitude": "9932",
+        "latitude": "9924"
+      },
+      "status": false,
+      "city": "Sulaymaniyah",
+      "id": 103
     }
   ]
 }

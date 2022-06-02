@@ -7,6 +7,7 @@ export default function DateField({ date, setDate, disable }) {
   const [openDater, setDater] = useState(false);
   return (
     <>
+      <div className="mb-3">Configured Date:</div>
       <div
         onClick={() => setDater(!openDater)}
         className="mb-6 transition-all hover:drop-shadow-md cursor-pointer -ml-1"
@@ -29,7 +30,9 @@ export default function DateField({ date, setDate, disable }) {
         open={openDater && !disable}
         value={moment(date, "DD-MM-YYYY")}
         onChange={(date) => {
-          setDate(moment(date).format("DD-MM-YYYY"));
+          const newDate = moment(date).format("DD-MM-YYYY").toString();
+          setDate(newDate);
+          console.log(newDate);
           setDater(false);
         }}
       />

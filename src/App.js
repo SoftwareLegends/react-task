@@ -14,18 +14,24 @@ import { ToastContainer } from "react-toastify";
 export default function App() {
   // the second ones are online versions
 
-  axios.defaults.baseURL = "http://localhost:3000/data";
+  axios.defaults.baseURL = "http://localhost:3000/";
   // axios.defaults.baseURL = "https://api.jsonbin.io/b/6297dcc0402a5b3802190021";
   const dispatch = useDispatch();
 
-  useEffect(() => {
+  const fetchData = () => {
     axios
-      .get("")
+      .get("/data")
       .then((res) => {
         dispatch(setData(res.data));
         // dispatch(setData(res.data.data));
       })
       .catch((err) => console.log(err));
+  };
+
+  window.fetchData = fetchData;
+
+  useEffect(() => {
+    fetchData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

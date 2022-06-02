@@ -11,6 +11,10 @@ const option = [
 
 export default function DishesField({ selected, setSelected, disable }) {
   const [options, setOptions] = useState(option);
+
+  window.clearDishes = () => {
+    setOptions(option);
+  };
   return (
     <>
       <div className="mt-7 mb-3">Satellite Dishes:</div>

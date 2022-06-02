@@ -6,6 +6,7 @@ import LongLatField from "../components/AddingForm/LongLatField";
 import StatusField from "../components/AddingForm/StatusField";
 import CityField from "../components/AddingForm/CityField";
 import { toast } from "react-toastify";
+import axios from "axios";
 
 export default function AddingForm() {
   const [date, setDate] = useState("");
@@ -50,11 +51,40 @@ export default function AddingForm() {
     }
 
     easyFields.forEach((el, idx) => {
-      [err, easyFields[idx]] = validate(form, easyFields[idx], err);
+      [err, easyFields[idx]] = validate(form, el, err);
     });
-    if (err) {
-    } else {
-      console.log(easyFields);
+    if (!err) {
+      const tempDishes = [];
+      selected.forEach((el) => tempDishes.push(el.value));
+      const prepareData = {
+        name: easyFields[0],
+        configuredAt: date,
+        createdBy: "kodo",
+        satelliteDishes: tempDishes,
+        address: {
+          longitude: easyFields[2],
+          latitude: easyFields[1],
+        },
+        status: easyFields[3] === "true",
+        city: easyFields[4],
+      };
+
+      axios
+        .post("/data", prepareData)
+        .then(() => {
+          toast.success(`Sattelite added successfully`, {
+            position: "bottom-center",
+            autoClose: 3500,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            theme: "light",
+          });
+          reset(false);
+          window.fetchData();
+        })
+        .catch((err) => console.log(err));
     }
   };
 
@@ -76,11 +106,27 @@ export default function AddingForm() {
     return [Math.max(old, temp), val];
   };
 
+  const reset = (toasting = true) => {
+    window.clearCity();
+    window.clearDishes();
+    setDate("");
+    setSelected([]);
+    if (toasting)
+      toast.success("Form Reseted", {
+        position: "bottom-center",
+        autoClose: 3500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        theme: "light",
+      });
+  };
   return (
     <div className="w-1/2">
-      <form name="addSatellite" onSubmit={submiting}>
+      <form name="addSatellite" id="addFormS" onSubmit={submiting}>
         <NameField disable={disable} />
-        <DateField disable={disable} Date={date} setDate={setDate} />
+        <DateField disable={disable} date={date} setDate={setDate} />
         <DishesField
           disable={disable}
           selected={selected}
@@ -92,6 +138,8 @@ export default function AddingForm() {
         <div className="mt-5 flex justify-between mr-5">
           <button
             disabled={disable}
+            onClick={reset}
+            type="reset"
             className="border border-pallate1 px-4 py-1 rounded text-pallate1 bg-white transition-all hover:drop-shadow-md disabled:bg-gray-300 disabled:text-white disabled:border-none"
           >
             Reset
