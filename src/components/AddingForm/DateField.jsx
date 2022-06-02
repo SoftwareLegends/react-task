@@ -32,7 +32,6 @@ export default function DateField({ date, setDate, disable }) {
         onChange={(date) => {
           const newDate = moment(date).format("DD-MM-YYYY").toString();
           setDate(newDate);
-          console.log(newDate);
           setDater(false);
         }}
       />

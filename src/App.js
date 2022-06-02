@@ -15,6 +15,7 @@ import Login from "./containers/Login";
 export default function App() {
   // the second ones are online versions
   const me = useSelector((state) => state.me);
+  const guest = useSelector((state) => state.guest);
 
   axios.defaults.baseURL = "http://localhost:3000/";
   // axios.defaults.baseURL = "https://api.jsonbin.io/b/6297dcc0402a5b3802190021";
@@ -41,8 +42,8 @@ export default function App() {
     <>
       <ToastContainer />
       <ThemeButton />
-      {me ? (
-        <>
+      {me || guest ? (
+        <React.Fragment>
           <Navigation />
           <div className="ml-52 w-[calc(100%-13rem)] min-h-screen p-4">
             <Title />
@@ -52,11 +53,9 @@ export default function App() {
               <Route path="*" element={<E404 />} />
             </Routes>
           </div>
-        </>
+        </React.Fragment>
       ) : (
-        <>
-          <Login />
-        </>
+        <Login />
       )}
     </>
   );

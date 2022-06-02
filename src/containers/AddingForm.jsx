@@ -14,6 +14,20 @@ export default function AddingForm() {
   const [selected, setSelected] = useState([]);
   const [disable, setD] = useState(false);
   const me = useSelector((state) => state.me);
+  const guest = useSelector((state) => state.guest);
+
+  const resetWithMessage = (type, message) => {
+    toast[type](message, {
+      position: "bottom-center",
+      autoClose: 3500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      style: { margin: 10 },
+      theme: "light",
+    });
+  };
 
   const submiting = (e) => {
     e.preventDefault();
@@ -28,28 +42,12 @@ export default function AddingForm() {
 
     if (!date || date === "DD-MM-YYYY" || date === "") {
       err = 1;
-      toast.error(`Please Enter a Date`, {
-        position: "bottom-center",
-        autoClose: 3500,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        theme: "light",
-      });
+      resetWithMessage("error", "Please Enter a Date");
     }
 
     if (selected.length === 0) {
       err = 1;
-      toast.error(`Please Select a Dish`, {
-        position: "bottom-center",
-        autoClose: 3500,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        theme: "light",
-      });
+      resetWithMessage("error", "Please Select a Dish");
     }
 
     easyFields.forEach((el, idx) => {
@@ -61,7 +59,7 @@ export default function AddingForm() {
       const prepareData = {
         name: easyFields[0],
         configuredAt: date,
-        createdBy: me,
+        createdBy: guest ? "Guest" : me,
         satelliteDishes: tempDishes,
         address: {
           longitude: easyFields[2],
@@ -74,15 +72,7 @@ export default function AddingForm() {
       axios
         .post("/data", prepareData)
         .then(() => {
-          toast.success(`Sattelite added successfully`, {
-            position: "bottom-center",
-            autoClose: 3500,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            theme: "light",
-          });
+          resetWithMessage("success", "Sattelite added successfully.");
           reset(false);
           window.fetchData();
         })
@@ -94,15 +84,11 @@ export default function AddingForm() {
     let temp = 0;
     const val = form.get(name);
     if (!val || val.length < 4) {
-      toast.error(`Please Enter Field ${name}`, {
-        position: "bottom-center",
-        autoClose: 3500,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        theme: "light",
-      });
+      if (name === "Longitude" || name === "Latitude") {
+        resetWithMessage("error", `${name} should be mor than 3 digits`);
+      } else {
+        resetWithMessage("error", `Please Enter Field ${name}`);
+      }
       temp = 1;
     }
     return [Math.max(old, temp), val];
@@ -114,16 +100,7 @@ export default function AddingForm() {
     window.clearDishes();
     setDate("");
     setSelected([]);
-    if (toasting)
-      toast.success("Form Reseted", {
-        position: "bottom-center",
-        autoClose: 3500,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        theme: "light",
-      });
+    if (toasting) resetWithMessage("success", "Form reseted");
   };
   return (
     <div className="w-1/2">

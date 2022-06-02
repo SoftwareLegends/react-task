@@ -3,6 +3,7 @@ import theme from "./theme.js";
 import data from "./data.js";
 import filters from "./filters";
 import me from "./me.js";
+import guest from "./guest";
 
 const store = configureStore({
   reducer: {
@@ -10,6 +11,7 @@ const store = configureStore({
     data,
     me,
     filters,
+    guest,
   },
 });
 

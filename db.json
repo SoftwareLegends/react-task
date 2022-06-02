@@ -9,6 +9,16 @@
       "name": "kodo",
       "password": "11112222",
       "id": 2
+    },
+    {
+      "name": "kodo1",
+      "password": "12341234",
+      "id": 3
+    },
+    {
+      "name": "kodo11",
+      "password": "12341234",
+      "id": 4
     }
   ],
   "data": [
@@ -1729,6 +1739,36 @@
       "status": false,
       "city": "Kirkuk",
       "id": 101
+    },
+    {
+      "name": "All Works",
+      "configuredAt": "07-12-2023",
+      "createdBy": "Guest",
+      "satelliteDishes": [
+        "Dish 1000"
+      ],
+      "address": {
+        "longitude": "31.913",
+        "latitude": "-21.323"
+      },
+      "status": true,
+      "city": "Erbil",
+      "id": 102
+    },
+    {
+      "name": "awhd",
+      "configuredAt": "08-06-2022",
+      "createdBy": "kodo",
+      "satelliteDishes": [
+        "Dish 500"
+      ],
+      "address": {
+        "longitude": "1232",
+        "latitude": "9991"
+      },
+      "status": false,
+      "city": "Sulaymaniyah",
+      "id": 103
     }
   ]
 }

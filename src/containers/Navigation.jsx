@@ -4,6 +4,7 @@ import navigation_items from "../components/Navigation/NavigationPaths.json";
 import { useDispatch } from "react-redux";
 import { setMe } from "../data/me";
 import { toast } from "react-toastify";
+import { setGuest } from "../data/guest";
 
 export default function Navigation() {
   const dispatch = useDispatch();
@@ -27,6 +28,7 @@ export default function Navigation() {
               theme: "light",
             });
             dispatch(setMe(""));
+            dispatch(setGuest(false));
           }}
           className="mx-4 w-40 text-left my-2 px-3 py-2 block rounded cursor-pointer transition-all hover:scale-105 text-white hover:border hover:bg-hover hover:border-none"
         >
