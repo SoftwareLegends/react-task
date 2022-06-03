@@ -53,6 +53,7 @@ module.exports = {
       topCreator1: "#FBF8F1",
       bgall2: "#27272A",
       bg2all2: "#18181B",
+      darkInputBG: "#eaeaea",
     },
     extend: {},
   },

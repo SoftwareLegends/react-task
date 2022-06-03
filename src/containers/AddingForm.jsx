@@ -120,14 +120,14 @@ export default function AddingForm() {
             disabled={disable}
             onClick={reset}
             type="reset"
-            className="border border-pallate1 px-4 py-1 rounded text-pallate1 bg-white transition-all hover:drop-shadow-md disabled:bg-gray-300 disabled:text-white disabled:border-none"
+            className="border dark:border-pallate2 dark:text-pallate2 dark:bg-bgall2 border-pallate1 px-4 py-1 rounded text-pallate1 bg-white transition-all hover:drop-shadow-md disabled:bg-gray-300 disabled:text-white disabled:border-none"
           >
             Reset
           </button>
           <button
             disabled={disable}
             type="submit"
-            className="px-4 py-1 rounded text-white bg-pallate1 transition-all hover:drop-shadow-md disabled:bg-gray-300"
+            className="px-4 py-1 dark:bg-pallate2 rounded text-white bg-pallate1 transition-all hover:drop-shadow-md disabled:bg-gray-300"
           >
             Submit
           </button>

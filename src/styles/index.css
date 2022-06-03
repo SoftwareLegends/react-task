@@ -83,7 +83,11 @@ td {
 
 .customSelectMe > div {
   flex-direction: row-reverse;
-  border-color: #54bab9 !important;
+  border-color: #54bab9;
+}
+
+.dark .customSelectMe > div {
+  border-color: #5902ec;
 }
 
 .dark .customSelectMe > div {
@@ -124,4 +128,8 @@ td {
 
 .tablepag1 .break {
   display: inline;
+}
+
+.makeDark {
+  background: rgb(51, 51, 51) !important;
 }

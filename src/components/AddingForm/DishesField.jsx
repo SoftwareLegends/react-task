@@ -17,9 +17,9 @@ export default function DishesField({ selected, setSelected, disable }) {
   };
   return (
     <>
-      <div className="mt-7 mb-3">Satellite Dishes:</div>
+      <div className="mt-7 mb-3 dark:text-white">Satellite Dishes:</div>
       <Select
-        className="transition-all disabled:bg-gray-200 disabled:cursor-wait customSelectMe bg-white w-64 text-base mb-3"
+        className="transition-all disabled:bg-gray-200 disabled:cursor-wait customSelectMe w-64 text-base mb-3"
         onChange={(v) => {
           let temp1 = [...selected];
           let temp2 = [...options];

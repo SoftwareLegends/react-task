@@ -22,13 +22,13 @@ export default function AddingForm() {
   const top = useMemo(() => topN(data, 10) || [], [data]);
 
   return (
-    <div className="w-1/2">
-      <div className="text mb-2">Lattest 10 Satellites</div>
-      <hr className="border-pallate1" />
+    <div className="w-1/2 pr-2">
+      <div className="text mb-2 dark:text-white">Lattest 10 Satellites</div>
+      <hr className="border-pallate1 dark:border-pallate2" />
       {top.map((el) => (
         <div
           key={el.id}
-          className="bg-topSat1 my-4 rounded h-14 px-5 flex justify-between items-center cursor-pointer transition-all hover:drop-shadow-md"
+          className="bg-topSat1 dark:bg-pallate3 my-4 rounded h-14 px-5 flex justify-between items-center cursor-pointer transition-all hover:drop-shadow-md"
         >
           <div>{el.name}</div>
           <div className="flex">

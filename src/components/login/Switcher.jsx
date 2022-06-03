@@ -22,7 +22,7 @@ export default function Switcher({ login, setLogin }) {
           </span>
         </div>
         <span
-          className="absolute shadow-md drop-shadow-md transition-all h-10 top-1.5 bg-white dark:bg-pallate3 w-32 inline-block py-1 rounded left-4"
+          className="absolute shadow-md drop-shadow-md transition-all h-10 top-1 bg-white dark:bg-pallate3 w-32 inline-block py-1 rounded left-4"
           style={{ left: login ? "" : "11.2rem" }}
         />
       </div>

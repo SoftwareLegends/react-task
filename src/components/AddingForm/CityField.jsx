@@ -15,13 +15,14 @@ export default function DishesField({ disable }) {
   };
   return (
     <>
-      <div className="mt-7 mb-3">City:</div>
+      <div className="mt-7 mb-3 dark:text-white">City:</div>
       <Select
         ref={selectInputRef}
         name="City"
-        className="transition-all disabled:bg-gray-200 disabled:cursor-wait customSelectMe bg-white w-64 text-base mb-3"
+        className="transition-all disabled:bg-gray-200 disabled:cursor-wait customSelectMe w-64 text-base mb-3"
         options={options}
         isDisabled={disable}
+        classNamePrefix="makeDark"
         isSearchable={false}
       />
     </>

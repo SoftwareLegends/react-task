@@ -41,7 +41,7 @@ export default function DateFilter() {
         ) : (
           <GoCalendar className="bg-pallate1 dark:bg-pallate2 inline w-10 h-10 rounded rounded-tr-none rounded-br-none p-2" />
         )}
-        <div className="inline-block text-black dark:bg-gray-200 w-54 border-2 text-base py-1.5 px-4 border-l-0 rounded-tr rounded-br z-10 bg-white">
+        <div className="inline-block text-black dark:border-pallate2 dark:text-white dark:bg-gray-700 w-54 border-2 text-base py-1.5 px-4 border-l-0 rounded-tr rounded-br z-10 bg-white">
           {filters.startDate || "DD-MM-YYYY"} -{" "}
           {filters.endDate || "DD-MM-YYYY"}
         </div>

@@ -125,14 +125,14 @@ export default function LoginContainer() {
           <div className="text dark:text-white">User name</div>
           <input
             disabled={disable}
-            className="rounded disabled:bg-gray-200 focus:ring-pallate1 focus:border-pallate1 dark:disabled:bg-gray-200 dark:focus:border-pallate2 dark:focus:ring-pallate2 w-full transition-all hover:drop-shadow-md hover:shadow-md border-gray-200 border-2"
+            className="rounded dark:bg-gray-700 dark:border-pallate2 dark:text-white disabled:bg-gray-200 focus:ring-pallate1 focus:border-pallate1  dark:disabled:bg-gray-200 dark:focus:border-pallate2 dark:focus:ring-pallate2 w-full transition-all hover:drop-shadow-md hover:shadow-md border-gray-200 border-2"
             type="text"
             name="name"
             placeholder="Type your user name"
           />
           <div className="text mt-5 dark:text-white">Password</div>
           <input
-            className="rounded dark:focus:border-pallate2 dark:focus:ring-pallate2 disabled:bg-gray-200 dark:disabled:bg-gray-200 focus:ring-pallate1 focus:border-pallate1 w-full transition-all hover:drop-shadow-md hover:shadow-md border-gray-200 border-2"
+            className="rounded dark:bg-gray-700 dark:border-pallate2 dark:text-white dark:focus:border-pallate2 dark:focus:ring-pallate2 disabled:bg-gray-200 dark:disabled:bg-gray-200 focus:ring-pallate1 focus:border-pallate1 w-full transition-all hover:drop-shadow-md hover:shadow-md border-gray-200 border-2"
             type="password"
             name="password"
             disabled={disable}
