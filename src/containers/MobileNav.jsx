@@ -12,7 +12,7 @@ export default function MobileNav() {
   const theme = useSelector((state) => state.theme);
 
   return (
-    <div
+    <nav
       className="transition-all lg:hidden overflow-hidden h-14 relative text-white dark:text-pallate2 bg-pallate1 dark:bg-gray-900"
       style={{
         height: open ? 270 : "",
@@ -78,6 +78,6 @@ export default function MobileNav() {
           Sign out
         </button>
       </div>
-    </div>
+    </nav>
   );
 }

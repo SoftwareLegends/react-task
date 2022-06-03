@@ -103,7 +103,7 @@ export default function AddingForm() {
     if (toasting) resetWithMessage("success", "Form reseted");
   };
   return (
-    <div className="w-1/2">
+    <div className="w-full md:w-1/2">
       <form name="addSatellite" id="addFormS" onSubmit={submiting}>
         <NameField disable={disable} />
         <DateField disable={disable} date={date} setDate={setDate} />

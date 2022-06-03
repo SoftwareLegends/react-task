@@ -4,6 +4,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   darkMode: "class",
   theme: {
+    screens: {
+      md: "820px",
+    },
     fontFamily: {
       sans: ['"inter"', ...defaultTheme.fontFamily.sans],
     },

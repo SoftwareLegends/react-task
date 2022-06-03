@@ -8,7 +8,7 @@ export default function NameField({ disable }) {
         name="Name"
         type="text"
         disabled={disable}
-        className="transition-all dark:bg-darkInputBG focus:border-pallate1 focus:ring-pallate1 dark:focus:border-pallate2 dark:focus:ring-pallate2 disabled:bg-gray-200 disabled:cursor-wait rounded text-sm mb-5 w-96 border-gray-300"
+        className="transition-all dark:bg-darkInputBG focus:border-pallate1 focus:ring-pallate1 dark:focus:border-pallate2 dark:focus:ring-pallate2 disabled:bg-gray-200 disabled:cursor-wait rounded text-sm mb-5 w-72 md:w-96 border-gray-300"
       />
     </>
   );
