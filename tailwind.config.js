@@ -5,6 +5,7 @@ module.exports = {
   darkMode: "class",
   theme: {
     screens: {
+      ...defaultTheme.screens,
       md: "820px",
     },
     fontFamily: {

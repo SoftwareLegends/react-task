@@ -41,7 +41,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className={` ${theme}`}>
+    <div className={theme}>
       <div className="bg-white dark:bg-bgall2">
         <ToastContainer />
         <ThemeButton />

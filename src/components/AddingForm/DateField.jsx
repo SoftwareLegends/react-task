@@ -29,6 +29,7 @@ export default function DateField({ date, setDate, disable }) {
       <DatePicker
         className="hidden"
         popperClassName="formd2"
+        class
         open={openDater && !disable}
         value={moment(date, "DD-MM-YYYY")}
         onChange={(date) => {

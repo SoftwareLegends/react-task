@@ -133,3 +133,13 @@ td {
 .makeDark {
   background: rgb(51, 51, 51) !important;
 }
+
+html {
+  width: 100vw !important;
+  background-color: red;
+  overflow-x: hidden !important;
+}
+
+.addingSattelite .react-datepicker-wrapper {
+  width: 100px;
+}
