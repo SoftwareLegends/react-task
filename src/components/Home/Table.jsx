@@ -4,12 +4,15 @@ import TableContentData from "./TableContentData";
 import { ContentClasses, TitleClasses } from "./TableClassServices";
 import { useSelector } from "react-redux";
 import { COLUMNS } from "./columns.js";
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
+import { AiFillEye } from "react-icons/ai";
 import moment from "moment";
 export default function Table() {
   const DATA = useSelector((state) => state.data);
   const filters = useSelector((state) => state.filters);
   const columns = useMemo(() => COLUMNS, []);
+  const [watch, setWatch] = useState({});
+
   const data = useMemo(() => {
     let temp = DATA;
 
@@ -73,13 +76,13 @@ export default function Table() {
   const { pageIndex } = state;
   return (
     <div>
-      <table className="mt-6 w-full border-separate" {...getTableProps()}>
+      <table className="mt-6 pr-2 w-full border-separate" {...getTableProps()}>
         <thead>
           {headerGroups.map((headerGroup) => (
             <tr {...headerGroup.getHeaderGroupProps()}>
               {headerGroup.headers.map((column, idx) => (
                 <th
-                  className={`text-base font-normal bg-customtableheading1 border border-semiBlack first:rounded-tl-lg last:rounded-tr-lg 
+                  className={`text-base font-normal bg-customtableheading1 dark:bg-pallate2 dark:text-white border border-semiBlack dark:border-white first:rounded-tl last:rounded-tr 
                   ${TitleClasses(column.id)} 
                   ${idx === 0 ? "" : "border-l-0"}
                   `}
@@ -88,6 +91,9 @@ export default function Table() {
                   {column.render("Header")}
                 </th>
               ))}
+              <th className="xl:hidden border-l-0 table-cell text-base font-normal bg-customtableheading1 dark:bg-pallate2 dark:text-white border border-semiBlack dark:border-white first:rounded-tl last:rounded-tr">
+                Open
+              </th>
             </tr>
           ))}
         </thead>
@@ -100,11 +106,11 @@ export default function Table() {
                 {row.cells.map((cell, idx) => {
                   return (
                     <td
-                      className={`p-3 align-top border border-t-0 text-base font-normal border-semiBlack 
+                      className={`p-3 align-top border dark:text-white dark:border-white border-t-0 text-base font-normal border-semiBlack 
                       ${ContentClasses(cell.column.id)} 
                       ${
                         index === data.length - 1
-                          ? "first:rounded-bl-lg last:rounded-br-lg"
+                          ? "first:rounded-bl last:rounded-br"
                           : ""
                       } 
                       ${idx === 0 ? "" : "border-l-0"}
@@ -115,6 +121,16 @@ export default function Table() {
                     </td>
                   );
                 })}
+                <td className=" xl:hidden sm:p-3 p-0.5 text-xs sm:text-base align-middle text-center border border-l-0 dark:text-white dark:border-white border-t-0 font-normal border-semiBlack">
+                  <button
+                    onClick={() => {
+                      setWatch(row.original);
+                    }}
+                    className="bg-pallate1 w-7 h-7 p-0.5 rounded text-white dark:bg-pallate2 transition-all shadow hover:drop-shadow-md hover:shadow-gray-400 dark:shadow-none dark:border-0"
+                  >
+                    <AiFillEye className="w-full h-full" />
+                  </button>
+                </td>
               </tr>
             );
           })}

@@ -3,7 +3,7 @@ const DishBadge = ({ badges = [], custom = false, Do = (inx) => {} }) => {
     <div className="flex flex-wrap gap-2">
       {badges.map((dish, idx) => (
         <span
-          className={`text-center border text-sm w-24 bg-dishpalate1 border-semiBlack rounded py-1 ${
+          className={`text-center border text-sm w-24 bg-dishpalate1 dark:bg-pallate3 dark:text-black border-semiBlack rounded py-1 ${
             custom ? "cursor-alias" : ""
           }`}
           onClick={() => {

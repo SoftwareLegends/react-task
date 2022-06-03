@@ -122,7 +122,7 @@ export default function LoginContainer() {
           />
         </div>
         <form onSubmit={submit}>
-          <div className="text-lg dark:text-white">User name</div>
+          <div className="text dark:text-white">User name</div>
           <input
             disabled={disable}
             className="rounded disabled:bg-gray-200 focus:ring-pallate1 focus:border-pallate1 dark:disabled:bg-gray-200 dark:focus:border-pallate2 dark:focus:ring-pallate2 w-full transition-all hover:drop-shadow-md hover:shadow-md border-gray-200 border-2"
@@ -130,7 +130,7 @@ export default function LoginContainer() {
             name="name"
             placeholder="Type your user name"
           />
-          <div className="text-lg mt-5 dark:text-white">Password</div>
+          <div className="text mt-5 dark:text-white">Password</div>
           <input
             className="rounded dark:focus:border-pallate2 dark:focus:ring-pallate2 disabled:bg-gray-200 dark:disabled:bg-gray-200 focus:ring-pallate1 focus:border-pallate1 w-full transition-all hover:drop-shadow-md hover:shadow-md border-gray-200 border-2"
             type="password"

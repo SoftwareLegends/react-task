@@ -121,3 +121,7 @@ td {
   outline: none;
   border: none;
 }
+
+.tablepag1 .break {
+  display: inline;
+}

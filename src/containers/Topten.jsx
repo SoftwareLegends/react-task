@@ -23,7 +23,7 @@ export default function AddingForm() {
 
   return (
     <div className="w-1/2">
-      <div className="text-lg mb-2">Lattest 10 Satellites</div>
+      <div className="text mb-2">Lattest 10 Satellites</div>
       <hr className="border-pallate1" />
       {top.map((el) => (
         <div

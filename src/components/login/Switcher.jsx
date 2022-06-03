@@ -3,7 +3,7 @@ import React from "react";
 export default function Switcher({ login, setLogin }) {
   return (
     <>
-      <div className="relative mb-5 flex text-lg justify-between bg-pallate1 dark:bg-pallate2 py-3 rounded">
+      <div className="relative mb-5 flex text justify-between bg-pallate1 dark:bg-pallate2 py-3 rounded">
         <div className="w-1/2 text-center">
           <span
             onClick={() => setLogin(true)}

@@ -18,7 +18,7 @@ export default function Filters() {
     <>
       <button
         onClick={() => setModal(true)}
-        className="text-base bg-pallate1 dark:bg-pallate2 text-white rounded-lg px-3 py-2 flex justify-center items-center transition-all shadow hover:drop-shadow-md hover:shadow-gray-400 dark:shadow-none dark:border-0"
+        className="text-base bg-pallate1 dark:bg-pallate2 text-white rounded px-3 py-2 flex justify-center items-center transition-all shadow hover:drop-shadow-md hover:shadow-gray-400 dark:shadow-none dark:border-0"
       >
         <BiFilterAlt className="inline w-5 h-5 mr-2 " />
         Filters

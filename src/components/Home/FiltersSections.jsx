@@ -5,7 +5,7 @@ import AddSetelite from "./AddSetelite";
 
 export default function FiltersSection() {
   return (
-    <div className="xl:flex xl:flex-wrap block xl:gap-2 justify-between form1d1a1">
+    <div className="pr-2 xl:flex xl:flex-wrap block xl:gap-2 justify-between form1d1a1">
       <div className="flex justify-center sm:justify-between flex-wrap gap-2">
         <Filters />
         <Date />

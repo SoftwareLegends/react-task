@@ -16,7 +16,7 @@ export default function Search() {
           dispatch(setFilters({ text: e.target.value }));
         }}
         placeholder="Search..."
-        className="inline-block outline-none text-black w-54 border-2 text-base py-1.5 px-4 border-l-0 rounded-tr-lg rounded-br-lg"
+        className="inline-block outline-none dark:bg-gray-200 text-black w-54 border-2 text-base py-1.5 px-4 border-l-0 rounded-tr rounded-br"
       />
     </div>
   );
