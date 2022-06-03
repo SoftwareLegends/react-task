@@ -44,7 +44,7 @@ export const ContentClasses = (target) => {
   } else if (target === "configuredAt") {
     return "text-center hidden xl:table-cell";
   } else if (target === "satelliteDishes") {
-    return "justify-center border-l sm:table-cell sm:p-3 p-0.5 text-xs sm:text-base";
+    return "justify-center sm:table-cell sm:p-3 p-0.5 text-xs sm:text-base";
   } else {
     return "";
   }

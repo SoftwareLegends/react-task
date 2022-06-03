@@ -7,6 +7,7 @@ import { COLUMNS } from "./columns.js";
 import { useMemo, useState } from "react";
 import { AiFillEye } from "react-icons/ai";
 import moment from "moment";
+import DataModal from "./DataModal";
 export default function Table() {
   const DATA = useSelector((state) => state.data);
   const filters = useSelector((state) => state.filters);
@@ -76,6 +77,7 @@ export default function Table() {
   const { pageIndex } = state;
   return (
     <div>
+      <DataModal watch={watch} setWatch={setWatch} />
       <table className="mt-6 pr-2 w-full border-separate" {...getTableProps()}>
         <thead>
           {headerGroups.map((headerGroup) => (

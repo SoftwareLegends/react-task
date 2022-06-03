@@ -121,7 +121,7 @@ export default function Filters() {
       </div>
       <div
         onClick={() => setModal(false)}
-        className={`transition-all z-40 bg-black opacity-30 w-screen h-screen  left-0 top-0 ${
+        className={`transition-all z-40 bg-black opacity-30 w-screen h-screen backdrop-blur-lg left-0 top-0 ${
           modal ? "fixed" : "hidden"
         }`}
       ></div>
