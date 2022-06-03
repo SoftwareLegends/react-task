@@ -1,5 +1,5 @@
 import React from "react";
-import navs from "../components/Navigation/NavigationPaths.json";
+import navs from "../components/navigation/NavigationPaths.json";
 import { useLocation } from "react-router-dom";
 import BackButton from "../components/Title/BackButton";
 

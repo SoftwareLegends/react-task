@@ -1,6 +1,6 @@
-import NavigationTitle from "../components/Navigation/NavigationTitle.jsx";
-import NavigationButton from "../components/Navigation/NavigationButton";
-import navigation_items from "../components/Navigation/NavigationPaths.json";
+import NavigationTitle from "../components/navigation/NavigationTitle.jsx";
+import NavigationButton from "../components/navigation/NavigationButton";
+import navigation_items from "../components/navigation/NavigationPaths.json";
 import { useDispatch, useSelector } from "react-redux";
 import { setMe } from "../data/me";
 import { toast } from "react-toastify";

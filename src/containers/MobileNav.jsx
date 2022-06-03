@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import navs from "../components/Navigation/NavigationPaths.json";
+import navs from "../components/navigation/NavigationPaths.json";
 import { useDispatch, useSelector } from "react-redux";
 import { setMe } from "../data/me";
 import { toast } from "react-toastify";
