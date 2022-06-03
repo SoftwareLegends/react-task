@@ -28,10 +28,10 @@ export default function AddingForm() {
       {top.map((el) => (
         <div
           key={el.id}
-          className="bg-topSat1 dark:bg-pallate3 my-4 rounded h-14 px-5 flex justify-between items-center cursor-pointer transition-all hover:drop-shadow-md"
+          className="bg-topSat1 dark:bg-pallate3 my-4 rounded py-4 px-5 flex flex-wrap justify-between items-center cursor-pointer transition-all hover:drop-shadow-md"
         >
           <div>{el.name}</div>
-          <div className="flex">
+          <div className="flex flex-wrap">
             <div className="bg-topCreator1 border-black border rounded w-32 text-center text-sm">
               {el.createdBy}
             </div>
