@@ -33,7 +33,7 @@ const Selecting = ({ target }) => {
   }, [data]);
   return (
     <Select
-      className="customSelectMe bg-white mt-2 text-base"
+      className="customSelectMe mt-2 text-base"
       onChange={(v) => dispatch(setFilters({ [target]: v.value }))}
       options={options}
       value={

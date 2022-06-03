@@ -35,10 +35,40 @@ td {
 
 .formd1.react-datepicker-popper {
   left: 7rem !important;
-  top: 0.4rem !important;
+  top: 0.8rem !important;
   padding-top: 10px !important;
 }
 
+.form1d1a1 .react-datepicker__tab-loop {
+  position: absolute;
+}
+
+@media only screen and (max-width: 1280px) {
+  .formd1.react-datepicker-popper {
+    transform: translate(40vw, 30px) !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .formd1.react-datepicker-popper {
+    transform: translate(44vw, 30px) !important;
+  }
+}
+
+@media only screen and (max-width: 777px) {
+  .formd1.react-datepicker-popper {
+    transform: translate(33vw, 30px) !important;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .formd1.react-datepicker-popper {
+    transform: translate(-30vw, 30px) !important;
+  }
+}
+@media only screen and (max-width: 455px) {
+  .formd1.react-datepicker-popper {
+    transform: translate(-57vw, 75px) !important;
+  }
+}
 .formd2.react-datepicker-popper {
   left: 0rem !important;
   top: -3rem !important;
@@ -53,14 +83,27 @@ td {
 
 .customSelectMe > div {
   flex-direction: row-reverse;
-  border-color: #54bab9;
+  border-color: #54bab9 !important;
+}
+
+.dark .customSelectMe > div {
+  flex-direction: row-reverse;
+  border-color: #5902ec;
+  background-color: #eaeaea;
+}
+
+.dark .customSelectMe * {
+  color: black !important;
 }
 
 .customSelectMe > div > div:nth-child(1) > div {
   padding-left: 40px;
 }
+.dark .customSelectMe > div > div:nth-child(2) {
+  background-color: #5902ec;
+}
 .customSelectMe > div > div:nth-child(2) {
-  background-color: #54bab9;
+  background-color: #80cfcd;
   transform: translate(-0.4px, 0px);
   position: absolute;
   height: 38px;

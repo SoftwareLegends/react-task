@@ -1,7 +1,6 @@
 dark:bg-bgall2
-shadow hover:drop-shadow-md hover:shadow-gray-400 
-dark:shadow-gray-500 dark:border-0
+transition-all shadow hover:drop-shadow-md hover:shadow-gray-400 dark:shadow-none dark:border-0
 dark:bg-bg2all2
 dark:focus:border-pallate2 dark:focus:ring-pallate2
 dark:bg-pallate2
-dark:disabled:bg-gray-300
+dark:disabled:bg-gray-300 

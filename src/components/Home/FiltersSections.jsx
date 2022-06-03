@@ -5,12 +5,12 @@ import AddSetelite from "./AddSetelite";
 
 export default function FiltersSection() {
   return (
-    <div className="flex flex-wrap gap-2 justify-around">
-      <div className="flex items-center">
+    <div className="xl:flex xl:flex-wrap block xl:gap-2 justify-between form1d1a1">
+      <div className="flex justify-center sm:justify-between flex-wrap gap-2">
         <Filters />
         <Date />
       </div>
-      <div className="flex">
+      <div className="flex justify-center sm:justify-between flex-wrap gap-2 mt-3 xl:mt-0">
         <Search />
         <AddSetelite />
       </div>

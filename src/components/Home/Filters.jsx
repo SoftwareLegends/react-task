@@ -18,17 +18,17 @@ export default function Filters() {
     <>
       <button
         onClick={() => setModal(true)}
-        className="text-base bg-pallate1 text-white rounded-lg px-3 py-2 flex justify-center items-center transition-all hover:drop-shadow-md"
+        className="text-base bg-pallate1 dark:bg-pallate2 text-white rounded-lg px-3 py-2 flex justify-center items-center transition-all shadow hover:drop-shadow-md hover:shadow-gray-400 dark:shadow-none dark:border-0"
       >
         <BiFilterAlt className="inline w-5 h-5 mr-2 " />
         Filters
       </button>
       <div
-        className={`transition-all w-72 z-50 fixed bg-white rounded translate-y-60 ${
+        className={`transition-all w-72 z-50 fixed bg-white dark:bg-gray-900 dark:shadow-gray-900 dark:border-2 dark:border-pallate2 rounded translate-y-12 ${
           modal ? "inline-block" : "hidden"
         }`}
       >
-        <div className="py-4 px-6">
+        <div className="py-4 px-6 dark:text-white">
           <div>
             <label className="text-base">Created By:</label>
             <Selecting target="createdBy" />
@@ -49,8 +49,8 @@ export default function Filters() {
                 <div
                   className={`${ButtonsStyle} ${
                     !filters.status
-                      ? "border-[calc(3px)] border-pallate1"
-                      : "bg-radioNone"
+                      ? "border-[calc(3px)] border-pallate1 dark:border-pallate2"
+                      : "bg-radioNone dark:bg-gray-300"
                   }`}
                 />
                 Both
@@ -64,8 +64,8 @@ export default function Filters() {
                 <div
                   className={`${ButtonsStyle} ${
                     filters.status === "yes"
-                      ? "border-[calc(3px)] border-pallate1"
-                      : "bg-radioNone"
+                      ? "border-[calc(3px)] border-pallate1 dark:border-pallate2"
+                      : "bg-radioNone dark:bg-gray-300"
                   }`}
                 />
                 Success
@@ -79,8 +79,8 @@ export default function Filters() {
                 <div
                   className={`${ButtonsStyle} ${
                     filters.status === "no"
-                      ? "border-[calc(3px)] border-pallate1"
-                      : "bg-radioNone"
+                      ? "border-[calc(3px)] border-pallate1 dark:border-pallate2"
+                      : "bg-radioNone dark:bg-gray-300"
                   }`}
                 />
                 Fail
@@ -92,7 +92,7 @@ export default function Filters() {
             <Selecting target="city" />
           </div>
         </div>
-        <hr className="border-pallate1 mt-2 mb-4" />
+        <hr className="border-pallate1 dark:border-pallate2 mt-2 mb-4" />
         <div className="flex justify-between pb-3 px-3">
           <button
             onClick={() => {
@@ -105,13 +105,15 @@ export default function Filters() {
                 })
               );
             }}
-            className="text-base bg-white transition-all hover:drop-shadow-md text-red border-2 py-1 px-4 rounded border-red"
+            className="text-base bg-white dark:bg-gray-900 transition-all shadow hover:drop-shadow-md hover:shadow-gray-400 dark:shadow-none
+            text-red border-2 py-1 px-4 rounded border-red"
           >
             Reset
           </button>
           <button
             onClick={() => setModal(false)}
-            className="text-base transition-all hover:drop-shadow-md text-white bg-pallate1 py-1 px-4 rounded "
+            className="text-base  transition-all shadow hover:drop-shadow-md hover:shadow-gray-400 dark:shadow-none dark:border-0
+            text-white bg-pallate1 dark:bg-pallate2 py-1 px-4 rounded "
           >
             Close
           </button>

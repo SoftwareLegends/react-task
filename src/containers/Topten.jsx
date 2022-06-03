@@ -19,7 +19,7 @@ export default function AddingForm() {
       })
       .slice(0, n);
   };
-  const top = useMemo(() => topN(data, 10), [data]);
+  const top = useMemo(() => topN(data, 10) || [], [data]);
 
   return (
     <div className="w-1/2">

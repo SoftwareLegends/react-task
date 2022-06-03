@@ -8,8 +8,8 @@ export default function Search() {
   const dispatch = useDispatch();
 
   return (
-    <div className="ml-3 text-white cursor-pointer transition-all hover:drop-shadow-md focus:drop-shadow-md">
-      <AiOutlineSearch className="bg-pallate1 inline w-10 h-10 rounded-lg rounded-tr-none rounded-br-none p-2" />
+    <div className="xl:ml-3 text-white cursor-pointer transition-all hover:drop-shadow-md  dark:shadow-none dark:border-0 focus:drop-shadow-md">
+      <AiOutlineSearch className="bg-pallate1 dark:bg-pallate2 inline w-10 h-10 rounded rounded-tr-none rounded-br-none p-2" />
       <input
         value={text || ""}
         onChange={(e) => {

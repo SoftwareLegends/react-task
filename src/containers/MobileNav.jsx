@@ -43,6 +43,7 @@ export default function MobileNav() {
       <div className="mx-5">
         {navs.map((el) => (
           <NavLink
+            onClick={() => setOpen(false)}
             className={({ isActive }) =>
               `transition-all block border-2 rounded my-3 text-center py-3 ${
                 isActive
@@ -70,6 +71,7 @@ export default function MobileNav() {
             });
             dispatch(setMe(""));
             dispatch(setGuest(false));
+            setOpen(false);
           }}
           className="w-full transition-all block border-2 rounded my-3 text-center py-3 dark:text-pallate2 dark:border-pallate2"
         >
